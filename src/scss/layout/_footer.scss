@@ -1,0 +1,9 @@
+.footer {
+  background: $brand-point;
+}
+@include respond-to("medium") {
+  .footer {
+    grid-column: 1 / span 8;
+    grid-row: 4/5;
+  }
+}

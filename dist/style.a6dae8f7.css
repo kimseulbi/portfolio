@@ -1,0 +1,323 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700");
+/* 스타일 초기화*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  /* font를 부모에게 상속 받아라 */
+  font: inherit;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block; }
+
+ul {
+  list-style-type: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 하이퍼링크 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+  /* cursor: crosshair; */ }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/*  css 모듈
+    가상요소 clearfix 제작
+*/
+.clearfix::after {
+  /* 상자를 만들어주려면 content="" null값 필요  */
+  content: "";
+  display: block;
+  clear: both; }
+
+/* 숨김 콘텐츠 */
+.readable-hidden,
+.skip-nav,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  /* 사각형 단위로 짤라내기 */
+  clip: rect(0, 0, 0, 0); }
+
+/* 동적으로 보이도록 처리 */
+.skip-nav:focus {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  clip: rect(auto, auto, auto, auto);
+  z-index: 100; }
+
+input:focus {
+  outline: none; }
+
+html {
+  font-size: 10px; }
+
+body {
+  background: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.3rem;
+  height: 100vh;
+  color: #1a1406; }
+
+::selection {
+  background: rgba(31, 200, 169, 0.2); }
+
+.container {
+  min-width: 320px; }
+
+@media (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: 5px 1fr 1fr 1fr 1fr 1fr 1fr 5px;
+    grid-template-rows: 150px 22rem auto 20rem; } }
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  font-size: 1.4rem; }
+  .header .logo {
+    background: url(logo.7a7149fb.svg) no-repeat 0 0;
+    background-size: 100%;
+    width: 40px;
+    height: 40px; }
+
+@media (max-width: 480px) {
+  .header {
+    grid-column: 1 / span 8;
+    padding: 0 2.5rem;
+    grid-row: 1/2; }
+    .header .logo {
+      margin: 3rem auto; }
+    .header .navigation .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; } }
+
+.visual {
+  color: #1a1406; }
+  .visual span {
+    background-image: linear-gradient(120deg, #1fc8a9, #1fc8a9);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 88%; }
+
+@media (max-width: 480px) {
+  .visual {
+    grid-column: 2 / span 6;
+    grid-row: 2/3;
+    font-size: 2.5rem; } }
+
+.main .comp {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  pointer-events: none; }
+  .main .comp .comp__area {
+    justify-self: end;
+    align-self: center;
+    position: absolute;
+    grid-area: 1 / 1 / 2 / 2;
+    pointer-events: initial; }
+    .main .comp .comp__area .comp__list {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      white-space: nowrap; }
+      .main .comp .comp__area .comp__list__item {
+        padding: 8px 0; }
+        .main .comp .comp__area .comp__list__item a {
+          padding: 5px; }
+          .main .comp .comp__area .comp__list__item a i {
+            font-size: 1.5rem; }
+          .main .comp .comp__area .comp__list__item a:hover, .main .comp .comp__area .comp__list__item a:focus {
+            color: #1fc8a9; }
+
+.main .protfo__img {
+  display: grid; }
+  .main .protfo__img--l, .main .protfo__img--m {
+    border-radius: 2.5rem;
+    background: rgba(31, 200, 169, 0.4); }
+
+.main .about__bg {
+  background: #f4f7f6; }
+  .main .about__bg .profile__img {
+    background: rgba(31, 200, 169, 0.2); }
+  .main .about__bg .skillset,
+  .main .about__bg .award {
+    background: rgba(31, 200, 169, 0.2); }
+
+.main .toolbox {
+  display: grid; }
+  .main .toolbox .toolbox__item {
+    background: rgba(31, 200, 169, 0.4); }
+
+@media (max-width: 480px) {
+  .main {
+    grid-column: 1 / span 8;
+    grid-row: 3/4; }
+    .main .comp__area {
+      margin-right: 3rem; }
+    .main .protfo__img {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      margin: 0 35px;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      grid-auto-rows: 20rem; }
+      .main .protfo__img .protfo__img--l {
+        grid-column: span 6; }
+      .main .protfo__img .protfo__img--m {
+        grid-column: span 3; }
+    .main .about__bg {
+      padding: 3.5rem;
+      margin: 35px 0; }
+      .main .about__bg .about {
+        display: grid;
+        grid-template-columns: 1fr; }
+        .main .about__bg .about__heading {
+          margin-bottom: 3rem; }
+          .main .about__bg .about__heading .name {
+            font-size: 2.6rem; }
+        .main .about__bg .about .profile__img {
+          display: none; }
+        .main .about__bg .about .skillset {
+          margin-bottom: 30px; }
+        .main .about__bg .about .skillset,
+        .main .about__bg .about .award {
+          height: 20rem; }
+    .main .toolbox {
+      grid-template-columns: 1fr;
+      padding: 0 3.5rem; }
+      .main .toolbox .toolbox__heading {
+        font-size: 2.6rem;
+        margin-bottom: 3rem; }
+      .main .toolbox .toolbox__item {
+        height: 30rem; }
+        .main .toolbox .toolbox__item:nth-child(n-1) {
+          margin-bottom: 3rem; } }
+
+.footer {
+  background: #1fc8a9; }
+
+@media (max-width: 480px) {
+  .footer {
+    grid-column: 1 / span 8;
+    grid-row: 4/5; } }

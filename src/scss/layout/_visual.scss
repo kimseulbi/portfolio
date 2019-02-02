@@ -1,0 +1,22 @@
+.visual {
+  color: $font-base;
+  span {
+    background-image: linear-gradient(120deg, $brand-point, $brand-point);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 88%;
+  }
+  //   .visual__area {
+  //     display: grid;
+  //     grid-template-columns: 1fr;
+  //     align-content: center;
+  //     height: 100%;
+  //   }
+}
+@include respond-to("medium") {
+  .visual {
+    grid-column: 2 / span 6;
+    grid-row: 2/3;
+    font-size: 2.5rem;
+  }
+}

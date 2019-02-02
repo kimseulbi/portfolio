@@ -1,0 +1,30 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: $body-bg;
+  font-size: 1.4rem;
+  .logo {
+    background: url(images/logo.svg) no-repeat 0 0;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+  }
+}
+@include respond-to("medium") {
+  .header {
+    grid-column: 1 / span 8;
+    padding: 0 2.5rem;
+    grid-row: 1/2;
+    .logo {
+      margin: 3rem auto;
+    }
+    .navigation {
+      .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.main {
+  .comp {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    pointer-events: none;
+    .comp__area {
+      justify-self: end;
+      align-self: center;
+      position: absolute;
+      grid-area: 1 / 1 / 2 / 2;
+      pointer-events: initial;
+      .comp__list {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        white-space: nowrap;
+        &__item {
+          padding: 8px 0;
+          a {
+            padding: 5px;
+            i {
+              font-size: 1.5rem;
+            }
+            &:hover,
+            &:focus {
+              color: $brand-point;
+            }
+          }
+        }
+      }
+    }
+  }
+  .protfo__img {
+    display: grid;
+    &--l,
+    &--m {
+      border-radius: 2.5rem;
+      background: rgba($color: $brand-point, $alpha: 0.4);
+    }
+  }
+  .about__bg {
+    background: #f4f7f6;
+    .profile__img {
+      background: rgba($color: $brand-point, $alpha: 0.2);
+    }
+    .skillset,
+    .award {
+      background: rgba($color: $brand-point, $alpha: 0.2);
+    }
+  }
+  .toolbox {
+    display: grid;
+    .toolbox__item {
+      background: rgba($color: $brand-point, $alpha: 0.4);
+    }
+  }
+}
+
+@include respond-to("medium") {
+  .main {
+    grid-column: 1 / span 8;
+    grid-row: 3/4;
+    .comp__area {
+      margin-right: 3rem;
+    }
+    .protfo__img {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      margin: 0 35px;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      grid-auto-rows: 20rem;
+      .protfo__img--l {
+        grid-column: span 6;
+      }
+      .protfo__img--m {
+        grid-column: span 3;
+      }
+    }
+    .about__bg {
+      padding: 3.5rem;
+      margin: 35px 0;
+      .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        &__heading {
+          margin-bottom: 3rem;
+          .name {
+            font-size: 2.6rem;
+          }
+        }
+        .profile__img {
+          display: none;
+        }
+        .skillset {
+          margin-bottom: 30px;
+        }
+        .skillset,
+        .award {
+          height: 20rem;
+        }
+      }
+    }
+    .toolbox {
+      grid-template-columns: 1fr;
+      padding: 0 3.5rem;
+      .toolbox__heading {
+        font-size: 2.6rem;
+        margin-bottom: 3rem;
+      }
+      .toolbox__item {
+        height: 30rem;
+        &:nth-child(n-1) {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}

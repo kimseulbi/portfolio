@@ -1,0 +1,25 @@
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$font-base: #1a1406;
+$brand-point: #1fc8a9;
+$brand-bg: #ffefe3;
+
+//** Background color for `<body>`.
+$body-bg: #fff;
+
+// breakpoints
+$breakpoints: (
+  "medium": (
+    max-width: 480px
+  ),
+  "large": (
+    max-width: 1000px
+  ),
+  "huge": (
+    max-width: 1200px
+  )
+);
+
+// $brand-logo: url("/images/logo.svg");
