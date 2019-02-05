@@ -12,34 +12,46 @@
       type="image/x-icon"
     /> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <script src="/style.a6dae8f7.js"></script></head>
   <body>
-    <a href="#main" class="skip-nav">본문바로가기</a>
-    <div class="container">
+    <!-- wrap -->
+    <div class="wrap">
       <header class="header">
-        <h1 class="logo"><a href="#"></a></h1>
+        <h1 class="logo flipOutX"><a href="#"></a></h1>
         <nav class="navigation">
           <h2 class="readable-hidden">메인메뉴</h2>
           <ul class="menu">
-            <li class="menu__item"><a href="#">PORTFOLIO</a></li>
-            <li class="menu__item"><a href="#">ABOUT</a></li>
-            <li class="menu__item"><a href="#">CONTACT</a></li>
-            <li class="menu__item"><a href="#">RESUME</a></li>
+            <li class="menu__item"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="menu__item"><a href="#about">ABOUT</a></li>
+            <li class="menu__item"><a href="#contact">CONTACT</a></li>
+            <li class="menu__item"><a href="#" target="_blank">RESUME</a></li>
           </ul>
         </nav>
       </header>
-      <div class="visual">
-        <div class="visual__area">
-          <h2 class="visual__text">Hi! I'm Seulbi Kim,</h2>
-          <h2 class="visual__text">
-            a <span>Front-end developer</span> passionate
-          </h2>
-          <h2 class="visual__text">
-            about <span>bridging gaps</span> between people and their goals
-          </h2>
+      <div class="container"></div>
+      <footer class="footer" id="contact">
+        <div class="footer__area">
+          <div class="line__horizontal"></div>
+          <h2 class="footer__heading">CONTACT ME</h2>
+
+          <small class="copyright">
+            Copyright since &copy; 2018 by Seulbi Kim.
+          </small>
+          <div class="social__list">
+            <ul>
+              <li class="email"></li>
+              <li class="github"></li>
+              <li class="blog"></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <main class="main" id="main">
+      </footer>
+    </div>
+
+    <!-- main -->
+    <template id="main">
+      <main class="main">
         <div class="comp">
           <div class="comp__area">
             <ul class="comp__list">
@@ -66,14 +78,41 @@
             </ul>
           </div>
         </div>
-        <section class="protfo__img">
-          <article class="protfo__img--l"><img src="#" alt=""></article>
-          <article class="protfo__img--m"><img src="#" alt=""></article>
-          <article class="protfo__img--m"><img src="#" alt=""></article>
-          <article class="protfo__img--l"><img src="#" alt=""></article>
+        <section class="visual">
+          <div class="visual__area bounceInDown">
+            <h2 class="visual__text">Hi! I'm Seulbi Kim,</h2>
+            <h2 class="visual__text">
+              a <span>Front-end developer</span> passionate
+            </h2>
+            <h2 class="visual__text">
+              about <span>bridging gaps</span> between people and their goals
+            </h2>
+          </div>
         </section>
-        <div class="about__bg">
-          <section class="about">
+        <section class="protfo__img" id="portfolio">
+          <figure class="protfo__img--l">
+            <a href="https://baeminchan.netlify.com" target="_blank">
+              <img src="/chan_sub.ae7d757f.jpg" alt="배민찬카피프로젝트">
+            </a>
+          </figure>
+          <figure class="protfo__img--m">
+            <a href="https://fds-mid-project.netlify.com" target="_blank">
+              <img src="/baemin.874a1f04.jpg" alt="배민문방구카피프로젝트">
+            </a>
+          </figure>
+          <figure class="protfo__img--m">
+            <a href="https://clever-tesla-02b461.netlify.com" target="_blank">
+              <img src="/baseball.5cdb2273.jpg" alt="숫자야구게임">
+            </a>
+          </figure>
+          <figure class="protfo__img--l">
+            <a href="#">
+              <img src="/chan_sub.ae7d757f.jpg" alt="배민찬카피프로젝트">
+            </a>
+          </figure>
+        </section>
+        <section class="about__bg" id="about">
+          <div class="about">
             <div class="about__heading">
               <h2 class="name">SEULBI KIM</h2>
               <p>Front-End Developer, UI/UX designer</p>
@@ -97,8 +136,8 @@
               </ul>
             </div>
             <div class="award"></div>
-          </section>
-        </div>
+          </div>
+        </section>
         <section class="toolbox">
           <h2 class="toolbox__heading">MY TOOLBOX</h2>
           <div class="toolbox__item">
@@ -113,20 +152,8 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
-        <h2 class="footer__heading">CONTACT ME</h2>
-        <small class="copyright">
-          © Copyright since &copy; 2018 by Seulbi Kim.
-        </small>
-        <div class="social__list">
-          <ul>
-            <li class="email"></li>
-            <li class="github"></li>
-            <li class="blog"></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
+    </template>
+
     <script src="/src.e31bb0bc.js"></script>
   </body>
 </html>

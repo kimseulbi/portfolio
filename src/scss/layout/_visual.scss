@@ -1,22 +1,21 @@
 .visual {
   color: $font-base;
+  padding: 0 3rem 4rem;
+  h2 {
+    font-size: 2.5rem;
+  }
   span {
-    background-image: linear-gradient(120deg, $brand-point, $brand-point);
+    background-image: linear-gradient(0, $brand-point, $brand-point);
     background-repeat: no-repeat;
     background-size: 100% 0.3em;
     background-position: 0 88%;
   }
-  //   .visual__area {
-  //     display: grid;
-  //     grid-template-columns: 1fr;
-  //     align-content: center;
-  //     height: 100%;
-  //   }
+  .visual__area {
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
 }
 @include respond-to("medium") {
   .visual {
-    grid-column: 2 / span 6;
-    grid-row: 2/3;
-    font-size: 2.5rem;
   }
 }

@@ -39,14 +39,20 @@
   }
   .protfo__img {
     display: grid;
-    &--l,
-    &--m {
-      border-radius: 2.5rem;
-      background: rgba($color: $brand-point, $alpha: 0.4);
+    img {
+      display: block;
+      border-radius: 1rem;
+      border: 1px solid darken($brand-bg, 10%);
+      -webkit-filter: grayscale(100%);
+      filter: gray;
+      &:hover {
+        -webkit-filter: grayscale(0%);
+        filter: none;
+      }
     }
   }
   .about__bg {
-    background: #f4f7f6;
+    background: $brand-bg;
     .profile__img {
       background: rgba($color: $brand-point, $alpha: 0.2);
     }
@@ -65,8 +71,6 @@
 
 @include respond-to("medium") {
   .main {
-    grid-column: 1 / span 8;
-    grid-row: 3/4;
     .comp__area {
       margin-right: 3rem;
     }
@@ -80,7 +84,11 @@
         grid-column: span 6;
       }
       .protfo__img--m {
-        grid-column: span 3;
+        grid-column: span 6;
+      }
+      img {
+        max-width: 100%;
+        height: 100%;
       }
     }
     .about__bg {

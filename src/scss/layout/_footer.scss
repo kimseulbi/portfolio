@@ -4,6 +4,9 @@
 @include respond-to("medium") {
   .footer {
     grid-column: 1 / span 8;
-    grid-row: 4/5;
+    grid-row: 3/4;
+    &__area {
+      padding: 3rem 3rem;
+    }
   }
 }

@@ -1,0 +1,12 @@
+.wrap {
+  min-width: 320px;
+}
+@include respond-to("medium") {
+  .wrap {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: 5px 1fr 1fr 1fr 1fr 1fr 1fr 5px;
+    grid-template-rows: 140px auto 20rem;
+  }
+}
