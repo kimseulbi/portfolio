@@ -1,6 +1,6 @@
 .visual {
   color: $font-base;
-  padding: 0 3rem 4rem;
+  padding: 4rem 3rem 8rem;
   h2 {
     font-size: 2.5rem;
   }
@@ -13,6 +13,33 @@
   .visual__area {
     animation-duration: 3s;
     animation-iteration-count: 1;
+  }
+  .mouse {
+    position: relative;
+    border: 2px solid $font-base;
+    border-radius: 15px;
+    height: 30px;
+    width: 20px;
+    margin: 0 auto;
+    display: block;
+    z-index: 10;
+    top: 30px;
+    .wheel {
+      position: relative;
+      border-radius: 10px;
+      background: $font-base;
+      width: 2px;
+      height: 8px;
+      top: 3px;
+      margin-left: auto;
+      margin-right: auto;
+      animation-name: drop;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+    }
   }
 }
 @include respond-to("medium") {
