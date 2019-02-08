@@ -1,5 +1,21 @@
 .footer {
   background: $brand-point;
+  text-align: center;
+  &__heading {
+    font-size: 1.5rem;
+  }
+  .contact {
+    margin: 2rem 0;
+    .social-icons {
+      font-size: 2rem;
+      a {
+        padding: 0 2rem;
+      }
+    }
+  }
+  small {
+    font-size: 1.2rem;
+  }
 }
 @include respond-to("medium") {
   .footer {
