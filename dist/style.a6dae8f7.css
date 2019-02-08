@@ -172,7 +172,7 @@ body {
   background: rgba(31, 200, 169, 0.2); }
 
 p {
-  font-size: 1.6rem; }
+  font-size: 1.5rem; }
 
 @media (max-width: 480px) {
   .container {
@@ -193,12 +193,13 @@ p {
 .header {
   z-index: 100;
   background: #fff;
-  font-size: 1.4rem; }
+  font-size: 1.5rem; }
   .header .logo {
     background: url(logo.7a7149fb.svg) no-repeat 0 0;
     background-size: 100%;
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    margin: 3rem auto; }
   .header .menu a {
     padding: 1rem; }
     .header .menu a:hover, .header .menu a:active {
@@ -212,8 +213,6 @@ p {
     grid-column: 1 / span 8;
     padding: 0 2.5rem;
     grid-row: 1/2; }
-    .header .logo {
-      margin: 3rem auto; }
     .header .navigation .menu {
       display: flex;
       flex-direction: row;
@@ -341,6 +340,28 @@ p {
       .main .about__bg .about .skillset .skill__list .skill__item p {
         margin-top: 0.5rem;
         word-break: keep-all; }
+  .main .about__bg .about .award__item {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 1rem; }
+    .main .about__bg .about .award__item .bage {
+      display: inline-block;
+      color: white;
+      border-radius: 5px;
+      background-color: #1fc8a9;
+      width: 80px;
+      text-align: center;
+      font-size: 1.4rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      padding: 2px;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      text-align: center; }
+    .main .about__bg .about .award__item span {
+      font-size: 1.5rem;
+      word-break: keep-all; }
 
 .main .toolbox {
   display: grid; }

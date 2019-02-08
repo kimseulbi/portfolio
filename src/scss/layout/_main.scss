@@ -103,6 +103,33 @@
           }
         }
       }
+      .award {
+        &__item {
+          position: relative;
+          padding-left: 100px;
+          margin-bottom: 1rem;
+          .bage {
+            display: inline-block;
+            color: white;
+            border-radius: 5px;
+            background-color: $brand-point;
+            width: 80px;
+            text-align: center;
+            font-size: 1.4rem;
+            font-family: $num-font-family;
+            font-weight: 600;
+            padding: 2px;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            text-align: center;
+          }
+          span {
+            font-size: 1.5rem;
+            word-break: keep-all;
+          }
+        }
+      }
     }
   }
   .toolbox {
@@ -124,8 +151,6 @@
       }
       .protfo__img--m {
         grid-column: span 6;
-      }
-      img {
       }
     }
     .about__bg {
