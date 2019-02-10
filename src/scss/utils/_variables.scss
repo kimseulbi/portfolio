@@ -16,13 +16,13 @@ $body-bg: #fff;
 // breakpoints
 $breakpoints: (
   "medium": (
-    max-width: 480px
+    max-width: 600px
   ),
-  "large": (
-    max-width: 1000px
-  ),
+  // "large": (
+  //   min-width:  
+  // ),
   "huge": (
-    max-width: 1200px
+    min-width: 961px
   )
 );
 

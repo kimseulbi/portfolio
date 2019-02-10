@@ -174,7 +174,13 @@ body {
 ::selection {
   background: rgba($color: $brand-point, $alpha: 0.2);
 }
-
 p {
   font-size: 1.5rem;
+}
+.footer__area,
+.visual,
+.about,
+.protfo__img {
+  max-width: 1170px;
+  margin: 0 auto;
 }
