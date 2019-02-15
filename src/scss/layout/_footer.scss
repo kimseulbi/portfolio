@@ -4,17 +4,20 @@
   &__heading {
     font-size: 1.5rem;
   }
-  .contact {
-    margin: 2rem 0;
-    .social-icons {
-      font-size: 2rem;
-      a {
-        padding: 0 2rem;
+  .footer__area {
+    height: 200px;
+    .contact {
+      margin: 2rem 0 4rem;
+      .social-icons {
+        font-size: 2rem;
+        a {
+          padding: 0 2rem;
+        }
       }
     }
-  }
-  small {
-    font-size: 1.2rem;
+    small {
+      font-size: 1.2rem;
+    }
   }
 }
 @include respond-to("medium") {

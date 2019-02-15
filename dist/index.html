@@ -15,14 +15,14 @@
     <div class="wrap">
       <header class="header">
         <div class="header__area">
-          <h1 class="logo flipOutX"><a href="#"></a></h1>
+          <h1 class="logo flipOutX"><a href="#main"></a></h1>
           <nav class="navigation">
             <h2 class="readable-hidden">메인메뉴</h2>
             <ul class="menu">
               <li class="menu__item"><a href="#portfolio">PORTFOLIO</a></li>
               <li class="menu__item"><a href="#about">ABOUT</a></li>
               <li class="menu__item"><a href="#contact">CONTACT</a></li>
-              <li class="menu__item"><a href="#" target="_blank">RESUME</a></li>
+              <!-- <li class="menu__item"><a href="#resume" target="_blank">RESUME</a></li> -->
             </ul>
           </nav>
         </div>
@@ -101,26 +101,25 @@
             <div class="wheel"></div>
           </div>
         </section>
-        <section class="protfo__img" id="portfolio">
-          <figure class="protfo__img--l">
-            <a href="https://baeminchan.netlify.com" target="_blank">
-              <img src="/chan_sub.ae7d757f.jpg" alt="배민찬카피프로젝트">
-            </a>
+        <section class="protfo" id="portfolio">
+          <figure class="protfo__img--baeminchan">
+            <!-- <a href="https://baeminchan.netlify.com" target="_blank"></a> -->
+              <img src="/chan_sub.ae7d757f.jpg" alt="배민찬카피프로젝트" class="protfo__img">
+            <!-- </a> -->
+            <!-- <div class="img-cover">
+              <button class="btn-info">view info</button>
+              <button class="btn-site">view site</button>
+            </div> -->
           </figure>
-          <figure class="protfo__img--m">
-            <a href="https://fds-mid-project.netlify.com" target="_blank">
-              <img src="/baemin.874a1f04.jpg" alt="배민문방구카피프로젝트">
-            </a>
+          <figure class="protfo__img--baemin">
+            <!-- <a href="https://fds-mid-project.netlify.com" target="_blank" > -->
+              <img src="/baemin.874a1f04.jpg" alt="배민문방구카피프로젝트" class="protfo__img">
+            <!-- </a> -->
           </figure>
-          <figure class="protfo__img--m">
-            <a href="https://clever-tesla-02b461.netlify.com" target="_blank">
-              <img src="/baseball.5cdb2273.jpg" alt="숫자야구게임">
-            </a>
-          </figure>
-          <figure class="protfo__img--l">
-            <a href="#">
-              <img src="/chan_sub.ae7d757f.jpg" alt="배민찬카피프로젝트">
-            </a>
+          <figure class="protfo__img--baseball">
+            <!-- <a href="https://clever-tesla-02b461.netlify.com" target="_blank"> -->
+              <img src="/baseball.5cdb2273.jpg" alt="숫자야구게임" class="protfo__img">
+            <!-- </a> -->
           </figure>
         </section>
         <section class="about__bg" id="about">
@@ -129,7 +128,7 @@
               <h2 class="name">SEULBI KIM</h2>
               <p>Front-End Developer, UI/UX designer</p>
             </div>
-            <img src="#" alt="profile" class="profile__img">
+            <img src="/userImg.87d57ede.svg" alt="profile" class="profile__img">
             <div class="skillset">
               <ul class="skill__list">
                 <li class="skill__item">
@@ -152,10 +151,10 @@
             </div>
             <div class="award">
               <ul class="award__list">
-                <!-- <li class="award__item">
+                <li class="award__item">
                   <h6 class="bage">2019</h6>
                   <p>시옷즈 스터디 시작</p>
-                </li> -->
+                </li>
                 <li class="award__item">
                   <h6 class="bage">2018</h6>
                   <span>패스트캠퍼스 스쿨 11기 프론트엔드과정 수료</span>
@@ -178,11 +177,11 @@
                   <span>삼성SDS HTML5 & CSS3 Fundamental 수료</span><br>
                   <span>theboan 입사</span>
                 </li>
-                <li class="award__item">
+                <!-- <li class="award__item">
                   <h6 class="bage">2013</h6>
-                  <span>아이티월 Android기반 2D/3D 스마트폰 Game 개발 과정 수료</span><br>
+                  <span>아이티월 Android기반 2D/3D 스마트폰 Game 개발 과정 수료</span></br>
                   <span>MAYA 3D모델링 수료</span>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -201,6 +200,59 @@
           </div>
         </section> -->
       </section></main>
+    </template>
+
+    <!-- baeminchan -->
+    <template id="baeminchan">
+      <div class="sub">
+        <div class="visual__bg">
+          <div class="visual">
+              <div class="desc">
+                  <h2>Baeminchan Copy</h2>
+                  <hr>
+              </div>
+            </div>
+        </div>
+        <article class="article">
+          <div class="site__info">
+            <ul class="info__list">
+              <li class="info__item">
+                <h6>프로젝트명</h6>
+                <p>배민찬 카피 프로젝트</p>
+              </li>
+              <li class="info__item">
+                <h6>기간</h6>
+                <p>2018.12.03 ~ 2018.12.21</p>
+              </li>
+              <li class="info__item">
+                <h6>내용</h6>
+                <p>React.js를 사용하여 배민찬의 카피사이트를 구현<br>
+                6명의 팀원이 기획, 3명의 프론트엔드 개발, 배포까지 진행<br>
+                담당: 반찬목록화면, 반찬상세화면, 반찬 검색필터화면, 게시판 기능<br>
+                Postman으로 웹 API 테스트<br>
+                협업과정에서 GitHub, Google Drive, Slack, Git 등을 활용하여 협업<br>
+                Git을 활용으로 프로젝트 코드 형상관리<br>
+                스프린트 단위로 나누어 프로젝트를 진행하였으며, 하나의 스프린트가 끝날 때마다 기능을 하나씩 추가하고 개선<br>
+                사용기술 :React, HTML5, SASS, reactstrap, Git, GitHub, Slack, Postman</p>
+              </li>
+              <li class="info__item">
+                <a href="https://github.com/kimseulbi" target="_blank">
+                  <i class="fas fa-compass"></i>
+                </a>
+                <a href="https://github.com/kimseulbi" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <div class="back__area">
+          <a href="/index.html">
+            <i class="far fa-arrow-alt-circle-left"></i>
+            <h3>Back to portfolio</h3>
+          </a>
+        </div>
+      </div>
     </template>
 
     <script src="/src.e31bb0bc.js"></script>

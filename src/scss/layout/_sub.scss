@@ -1,0 +1,31 @@
+.sub {
+  display: grid;
+  width: 100%;
+  .article {
+    width: 100%;
+  }
+  .article,
+  .back__area {
+    padding: 0 3.5rem;
+  }
+  .visual__bg {
+    // background-image: url(images/chan_sub.jpg);
+    background-position: 0px 0px;
+    height: 650px;
+    background: rgba($color: $brand-point, $alpha: 0.4);
+  }
+}
+@include respond-to("medium") {
+  .sub {
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .sub {
+  }
+}
+
+@include respond-to("huge") {
+  .sub {
+  }
+}
