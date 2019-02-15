@@ -1,7 +1,7 @@
 .header {
   z-index: 100;
   background: $body-bg;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   width: 100%;
   padding: 0 3.5rem;
   .header__area {
@@ -67,6 +67,7 @@
     width: 100%;
     position: sticky;
     top: 0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08);
     &__area {
       height: 95px;
       line-height: 95px;

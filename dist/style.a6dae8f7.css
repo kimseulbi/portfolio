@@ -172,7 +172,7 @@ body {
   background: rgba(31, 200, 169, 0.2); }
 
 p {
-  font-size: 1.5rem; }
+  font-size: 1.6rem; }
 
 .footer__area,
 .visual,
@@ -226,7 +226,7 @@ p {
 .header {
   z-index: 100;
   background: #fff;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   width: 100%;
   padding: 0 3.5rem; }
   .header .header__area {
@@ -273,7 +273,8 @@ p {
     grid-row: 1/2;
     width: 100%;
     position: sticky;
-    top: 0; }
+    top: 0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08); }
     .header__area {
       height: 95px;
       line-height: 95px;
@@ -364,7 +365,7 @@ p {
         .main .comp .comp__area .comp__list__item a {
           padding: 5px; }
           .main .comp .comp__area .comp__list__item a i {
-            font-size: 1.5rem; }
+            font-size: 1.6rem; }
           .main .comp .comp__area .comp__list__item a:hover, .main .comp .comp__area .comp__list__item a:focus {
             color: #1fc8a9; }
 
@@ -382,7 +383,8 @@ p {
     border-radius: 1rem;
     border: 1px solid #d6e2de;
     -webkit-filter: grayscale(100%);
-    filter: gray; }
+    filter: gray;
+    cursor: pointer; }
     .main .protfo img:hover {
       -webkit-filter: grayscale(0%);
       filter: none; }
@@ -437,7 +439,7 @@ p {
         background-color: #1fc8a9;
         width: 80px;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         padding: 2px;
@@ -446,7 +448,7 @@ p {
         left: 0;
         text-align: center; }
       .main .about__bg .about .award__item span {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         word-break: keep-all; }
 
 .main .toolbox {
@@ -540,7 +542,7 @@ p {
   background: #1fc8a9;
   text-align: center; }
   .footer__heading {
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
   .footer .footer__area {
     height: 200px; }
     .footer .footer__area .contact {
@@ -577,12 +579,61 @@ p {
 .sub {
   display: grid;
   width: 100%; }
+  .sub .visual__bg {
+    background: url(chan_main.c19e532d.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-color: #eef3f7;
+    position: relative;
+    height: 450px; }
   .sub .article {
     width: 100%; }
+    .sub .article .site__info {
+      display: flex;
+      align-items: center; }
+      .sub .article .site__info .info__list .info__item {
+        margin-bottom: 2.5rem; }
+        .sub .article .site__info .info__list .info__item h6 {
+          color: #1fc8a9;
+          font-size: 1.8rem;
+          font-weight: 600; }
+        .sub .article .site__info .info__list .info__item ol {
+          list-style-type: disc;
+          padding-left: 2rem;
+          margin-bottom: 2rem; }
+        .sub .article .site__info .info__list .info__item li {
+          font-size: 1.6rem;
+          margin-top: 0.5rem;
+          word-break: keep-all; }
+      .sub .article .site__info .info__list .info__icon {
+        margin-left: -1rem; }
+        .sub .article .site__info .info__list .info__icon a {
+          margin: 0 1rem 0; }
+          .sub .article .site__info .info__list .info__icon a i {
+            font-size: 2.5rem;
+            color: #1a1406; }
+            .sub .article .site__info .info__list .info__icon a i:hover, .sub .article .site__info .info__list .info__icon a i:focus {
+              color: #1fc8a9; }
   .sub .article,
   .sub .back__area {
     padding: 0 3.5rem; }
-  .sub .visual__bg {
-    background-position: 0px 0px;
-    height: 650px;
-    background: rgba(31, 200, 169, 0.4); }
+  .sub .back__area {
+    margin: 100px 0; }
+    .sub .back__area a h3 {
+      color: #999;
+      font-weight: 600;
+      font-size: 2.4rem;
+      display: inline; }
+      .sub .back__area a h3:hover, .sub .back__area a h3:focus {
+        color: #1fc8a9; }
+
+.tag {
+  background: #1fc8a9;
+  border: 0;
+  border-radius: 24px;
+  color: white;
+  font-weight: 600;
+  padding: 5px 2rem;
+  margin-bottom: 5px;
+  margin-right: 3px;
+  display: inline-block; }

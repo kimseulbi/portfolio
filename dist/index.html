@@ -16,15 +16,7 @@
       <header class="header">
         <div class="header__area">
           <h1 class="logo flipOutX"><a href="#main"></a></h1>
-          <nav class="navigation">
-            <h2 class="readable-hidden">메인메뉴</h2>
-            <ul class="menu">
-              <li class="menu__item"><a href="#portfolio">PORTFOLIO</a></li>
-              <li class="menu__item"><a href="#about">ABOUT</a></li>
-              <li class="menu__item"><a href="#contact">CONTACT</a></li>
-              <!-- <li class="menu__item"><a href="#resume" target="_blank">RESUME</a></li> -->
-            </ul>
-          </nav>
+          <nav class="navigation"></nav>
         </div>
       </header>
       <div class="container"></div>
@@ -57,6 +49,17 @@
         </div>
       </footer>
     </div>
+
+  <!-- navigation -->
+  <template id="navigation">
+    <h2 class="readable-hidden">메인메뉴</h2>
+    <ul class="menu">
+      <li class="menu__item"><a href="#portfolio">PORTFOLIO</a></li>
+      <li class="menu__item"><a href="#about">ABOUT</a></li>
+      <li class="menu__item"><a href="#contact">CONTACT</a></li>
+      <!-- <li class="menu__item"><a href="#resume" target="_blank">RESUME</a></li> -->
+    </ul>
+  </template>
 
     <!-- main -->
     <template id="main">
@@ -201,17 +204,16 @@
         </section> -->
       </section></main>
     </template>
-
-    <!-- baeminchan -->
+    
+   <!-- baeminchan -->
     <template id="baeminchan">
       <div class="sub">
         <div class="visual__bg">
-          <div class="visual">
-              <div class="desc">
-                  <h2>Baeminchan Copy</h2>
-                  <hr>
-              </div>
-            </div>
+        </div>
+        <div class="visual">
+          <div class="visual__area">
+              <h2 class="visual__text bounceInDown"><span>Baeminchan Copy</span></h2>
+          </div>
         </div>
         <article class="article">
           <div class="site__info">
@@ -226,21 +228,26 @@
               </li>
               <li class="info__item">
                 <h6>내용</h6>
-                <p>React.js를 사용하여 배민찬의 카피사이트를 구현<br>
-                6명의 팀원이 기획, 3명의 프론트엔드 개발, 배포까지 진행<br>
-                담당: 반찬목록화면, 반찬상세화면, 반찬 검색필터화면, 게시판 기능<br>
-                Postman으로 웹 API 테스트<br>
-                협업과정에서 GitHub, Google Drive, Slack, Git 등을 활용하여 협업<br>
-                Git을 활용으로 프로젝트 코드 형상관리<br>
-                스프린트 단위로 나누어 프로젝트를 진행하였으며, 하나의 스프린트가 끝날 때마다 기능을 하나씩 추가하고 개선<br>
-                사용기술 :React, HTML5, SASS, reactstrap, Git, GitHub, Slack, Postman</p>
+                <ol>
+                  <li>React.js를 사용하여 배민찬의 카피사이트를 구현</li>
+                  <li>6명의 팀원이 기획, 3명의 프론트엔드 개발, 배포까지 진행</li>
+                  <li>담당: 반찬목록화면, 반찬상세화면, 반찬 검색필터화면, 게시판 기능</li>
+                  <li>Postman으로 웹 API 테스트</li>
+                  <li>협업과정에서 GitHub, Google Drive, Slack, Git 등을 활용하여 협업</li>
+                  <li>Git을 활용으로 프로젝트 코드 형상관리</li>
+                  <li>스프린트 단위로 나누어 프로젝트를 진행하였으며, 하나의 스프린트가 끝날 때마다 기능을 하나씩 추가하고 개선</li>
+                </ol>
+                <span class="tag">React</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span class="tag">reactstrap</span> <span class="tag">Git</span> <span class="tag">GitHub</span> <span class="tag">Slack</span> <span class="tag">Postman</span> 
               </li>
-              <li class="info__item">
-                <a href="https://github.com/kimseulbi" target="_blank">
-                  <i class="fas fa-compass"></i>
-                </a>
-                <a href="https://github.com/kimseulbi" target="_blank">
+              <li class="info__icon">
+                <a href="https://github.com/ElegantSiblings/FE" target="_blank">
                   <i class="fab fa-github"></i>
+                </a>
+                <a href="https://baeminchan.netlify.com" target="_blank">
+                  <i class="fab fa-chrome"></i>
+                </a>
+                <a href="https://youtu.be/0xTYpg4B0pw" target="_blank">
+                  <i class="fab fa-youtube"></i>
                 </a>
               </li>
             </ul>
@@ -248,8 +255,7 @@
         </article>
         <div class="back__area">
           <a href="/index.html">
-            <i class="far fa-arrow-alt-circle-left"></i>
-            <h3>Back to portfolio</h3>
+            <h3><i class="far fa-arrow-alt-circle-left"></i>&nbsp;Back to portfolio</h3>
           </a>
         </div>
       </div>

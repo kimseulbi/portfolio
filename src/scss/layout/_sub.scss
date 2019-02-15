@@ -1,31 +1,80 @@
 .sub {
   display: grid;
   width: 100%;
+  .visual__bg {
+    background: url(images/chan_main.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-color: #eef3f7;
+    position: relative;
+    height: 450px;
+  }
   .article {
     width: 100%;
+    .site__info {
+      display: flex;
+      align-items: center;
+      .info__list {
+        .info__item {
+          margin-bottom: 2.5rem;
+          h6 {
+            color: $brand-point;
+            font-size: 1.8rem;
+            font-weight: 600;
+          }
+          ol {
+            list-style-type: disc;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+          }
+          li {
+            font-size: 1.6rem;
+            margin-top: 0.5rem;
+            word-break: keep-all;
+          }
+        }
+        .info__icon {
+          margin-left: -1rem;
+          a {
+            margin: 0 1rem 0;
+            i {
+              font-size: 2.5rem;
+              color: $font-base;
+              &:hover,
+              &:focus {
+                color: $brand-point;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .article,
   .back__area {
     padding: 0 3.5rem;
   }
-  .visual__bg {
-    // background-image: url(images/chan_sub.jpg);
-    background-position: 0px 0px;
-    height: 650px;
-    background: rgba($color: $brand-point, $alpha: 0.4);
+  .back__area {
+    margin: 100px 0;
+    a {
+      h3 {
+        color: #999;
+        font-weight: 600;
+        font-size: 2.4rem;
+        display: inline;
+        &:hover,
+        &:focus {
+          color: $brand-point;
+        }
+      }
+    }
   }
 }
 @include respond-to("medium") {
-  .sub {
-  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 960px) {
-  .sub {
-  }
 }
 
 @include respond-to("huge") {
-  .sub {
-  }
 }
