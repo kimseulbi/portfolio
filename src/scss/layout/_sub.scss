@@ -1,13 +1,37 @@
 .sub {
   display: grid;
   width: 100%;
-  .visual__bg {
+  .link {
+    color: #339af0;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .chan__img {
     background: url(images/chan_main.jpg) no-repeat;
+  }
+  .baemin__img {
+    background: url(images/baemin.jpg) no-repeat;
+  }
+  .baseball__img {
+    background: url(images/baseball.jpg) no-repeat;
+  }
+  .colorChallenge__img {
+    background: url(images/color.jpg) no-repeat;
+  }
+  .visual__bg {
+    -webkit-filter: grayscale(0%);
+    filter: none;
     background-size: cover;
-    background-position: 0 0;
-    background-color: #eef3f7;
+    background-position: 50% 50%;
     position: relative;
     height: 450px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    &:hover {
+      -webkit-filter: grayscale(100%);
+      filter: gray;
+      transition: 0.5s;
+    }
   }
   .article {
     width: 100%;
@@ -55,7 +79,8 @@
     padding: 0 3.5rem;
   }
   .back__area {
-    margin: 100px 0;
+    margin: 100px auto;
+    max-width: 1170px;
     a {
       h3 {
         color: #999;
@@ -69,12 +94,4 @@
       }
     }
   }
-}
-@include respond-to("medium") {
-}
-
-@media screen and (min-width: 601px) and (max-width: 960px) {
-}
-
-@include respond-to("huge") {
 }

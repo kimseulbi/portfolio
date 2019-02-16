@@ -51,10 +51,11 @@
       border: 1px solid darken($brand-bg, 10%);
       -webkit-filter: grayscale(100%);
       filter: gray;
-      cursor: pointer;
       &:hover {
+        transition: 0.5s;
         -webkit-filter: grayscale(0%);
         filter: none;
+        box-shadow: 0 2px 6px 3px rgba(0, 0, 0, 0.08);
       }
     }
   }
@@ -111,11 +112,7 @@
         display: flex;
         align-items: center;
         &__item {
-          position: relative;
-          padding-left: 100px;
-          margin-bottom: 1rem;
           .bage {
-            display: inline-block;
             color: white;
             border-radius: 5px;
             background-color: $brand-point;
@@ -125,7 +122,6 @@
             font-family: $num-font-family;
             font-weight: 600;
             padding: 2px;
-            position: absolute;
             top: 3px;
             left: 0;
             text-align: center;
@@ -164,6 +160,17 @@
           display: none;
         }
       }
+      .award__item {
+        margin-bottom: 2rem;
+        padding-left: 0;
+        .bage {
+          display: block;
+          position: relative;
+        }
+        p {
+          margin-top: 1rem;
+        }
+      }
     }
     .toolbox {
       grid-template-columns: 1fr;
@@ -200,6 +207,15 @@
           display: none;
         }
       }
+      .award__item {
+        position: relative;
+        padding-left: 100px;
+        margin-bottom: 1rem;
+        .bage {
+          display: inline-block;
+          position: absolute;
+        }
+      }
     }
     .toolbox {
       grid-template-columns: 1fr;
@@ -222,7 +238,7 @@
   .main {
     .protfo {
       grid-template-columns: repeat(12, 1fr);
-      padding: 10rem 3.5rem;
+      padding: 12rem 3.5rem;
       figure {
         grid-column: span 6;
       }
@@ -250,6 +266,15 @@
         .award {
           grid-column: 9 / span 4;
           grid-row: 2/3;
+          .award__item {
+            position: relative;
+            padding-left: 100px;
+            margin-bottom: 1rem;
+            .bage {
+              display: inline-block;
+              position: absolute;
+            }
+          }
         }
       }
     }

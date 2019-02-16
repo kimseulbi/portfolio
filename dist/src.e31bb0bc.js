@@ -6764,6 +6764,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var templates = {
   main: document.querySelector("#main").content,
   baeminchan: document.querySelector("#baeminchan").content,
+  baemin: document.querySelector("#baemin").content,
+  baseball: document.querySelector("#baseball").content,
+  colorChallenge: document.querySelector("#colorChallenge").content,
   nav: document.querySelector("#navigation").content
 };
 var rootEl = document.querySelector(".container");
@@ -6784,7 +6787,7 @@ function _drawMainPage() {
   _drawMainPage = _asyncToGenerator(
   /*#__PURE__*/
   regeneratorRuntime.mark(function _callee() {
-    var frag1, frag2, baeminchanImgEl;
+    var frag1, frag2, baeminchanImgEl, baeminImgEl, baseballImgEl, colorChallengeImgEl;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
@@ -6793,10 +6796,22 @@ function _drawMainPage() {
             frag1 = document.importNode(templates.nav, true);
             frag2 = document.importNode(templates.main, true); // 2. 요소 선택
 
-            baeminchanImgEl = frag2.querySelector(".protfo__img--baeminchan"); // 5. 이벤트 리스너 등록하기
+            baeminchanImgEl = frag2.querySelector(".protfo__img--baeminchan");
+            baeminImgEl = frag2.querySelector(".protfo__img--baemin");
+            baseballImgEl = frag2.querySelector(".protfo__img--baseball");
+            colorChallengeImgEl = frag2.querySelector(".protfo__img--rgb"); // 5. 이벤트 리스너 등록하기
 
             baeminchanImgEl.addEventListener("click", function (e) {
               drawBaeminchanPage();
+            });
+            baeminImgEl.addEventListener("click", function (e) {
+              drawBaeminPage();
+            });
+            baseballImgEl.addEventListener("click", function (e) {
+              drawBaseballPage();
+            });
+            colorChallengeImgEl.addEventListener("click", function (e) {
+              drawColorChallengePage();
             }); // const imgCoverEl = protfoImgEl.querySelector(".img-cover");
             // 프로젝트 이미지 호버시 버튼 출력
             // protfoImgEl.addEventListener("mouseover", function() {
@@ -6812,7 +6827,7 @@ function _drawMainPage() {
             navEl.appendChild(frag1);
             rootEl.appendChild(frag2);
 
-          case 8:
+          case 14:
           case "end":
             return _context.stop();
         }
@@ -6824,7 +6839,8 @@ function _drawMainPage() {
 
 function drawBaeminchanPage() {
   return _drawBaeminchanPage.apply(this, arguments);
-}
+} // 배민문방구 서브페이지
+
 
 function _drawBaeminchanPage() {
   _drawBaeminchanPage = _asyncToGenerator(
@@ -6837,7 +6853,13 @@ function _drawBaeminchanPage() {
           case 0:
             // 1. 템플릿 복사
             frag1 = document.importNode(templates.nav, false);
-            frag2 = document.importNode(templates.baeminchan, true); // 6. 템플릿을 문서에 삽입
+            frag2 = document.importNode(templates.baeminchan, true); // // 2. 요소 선택
+            // const btnBackEl = frag2.querySelector(".btn__back");
+            // // 5. 이벤트 리스너 등록하기
+            // btnBackEl.addEventListener("click", e => {
+            //   window.history.go(-1);
+            // });
+            // 6. 템플릿을 문서에 삽입
 
             navEl.textContent = "";
             rootEl.textContent = "";
@@ -6852,6 +6874,104 @@ function _drawBaeminchanPage() {
     }, _callee2, this);
   }));
   return _drawBaeminchanPage.apply(this, arguments);
+}
+
+function drawBaeminPage() {
+  return _drawBaeminPage.apply(this, arguments);
+} // 숫자야구 서브페이지
+
+
+function _drawBaeminPage() {
+  _drawBaeminPage = _asyncToGenerator(
+  /*#__PURE__*/
+  regeneratorRuntime.mark(function _callee3() {
+    var frag1, frag2;
+    return regeneratorRuntime.wrap(function _callee3$(_context3) {
+      while (1) {
+        switch (_context3.prev = _context3.next) {
+          case 0:
+            // 1. 템플릿 복사
+            frag1 = document.importNode(templates.nav, false);
+            frag2 = document.importNode(templates.baemin, true); // 6. 템플릿을 문서에 삽입
+
+            navEl.textContent = "";
+            rootEl.textContent = "";
+            navEl.appendChild(frag1);
+            rootEl.appendChild(frag2);
+
+          case 6:
+          case "end":
+            return _context3.stop();
+        }
+      }
+    }, _callee3, this);
+  }));
+  return _drawBaeminPage.apply(this, arguments);
+}
+
+function drawBaseballPage() {
+  return _drawBaseballPage.apply(this, arguments);
+} // RGB Challenge 서브페이지
+
+
+function _drawBaseballPage() {
+  _drawBaseballPage = _asyncToGenerator(
+  /*#__PURE__*/
+  regeneratorRuntime.mark(function _callee4() {
+    var frag1, frag2;
+    return regeneratorRuntime.wrap(function _callee4$(_context4) {
+      while (1) {
+        switch (_context4.prev = _context4.next) {
+          case 0:
+            // 1. 템플릿 복사
+            frag1 = document.importNode(templates.nav, false);
+            frag2 = document.importNode(templates.baseball, true); // 6. 템플릿을 문서에 삽입
+
+            navEl.textContent = "";
+            rootEl.textContent = "";
+            navEl.appendChild(frag1);
+            rootEl.appendChild(frag2);
+
+          case 6:
+          case "end":
+            return _context4.stop();
+        }
+      }
+    }, _callee4, this);
+  }));
+  return _drawBaseballPage.apply(this, arguments);
+}
+
+function drawColorChallengePage() {
+  return _drawColorChallengePage.apply(this, arguments);
+}
+
+function _drawColorChallengePage() {
+  _drawColorChallengePage = _asyncToGenerator(
+  /*#__PURE__*/
+  regeneratorRuntime.mark(function _callee5() {
+    var frag1, frag2;
+    return regeneratorRuntime.wrap(function _callee5$(_context5) {
+      while (1) {
+        switch (_context5.prev = _context5.next) {
+          case 0:
+            // 1. 템플릿 복사
+            frag1 = document.importNode(templates.nav, false);
+            frag2 = document.importNode(templates.colorChallenge, true); // 6. 템플릿을 문서에 삽입
+
+            navEl.textContent = "";
+            rootEl.textContent = "";
+            navEl.appendChild(frag1);
+            rootEl.appendChild(frag2);
+
+          case 6:
+          case "end":
+            return _context5.stop();
+        }
+      }
+    }, _callee5, this);
+  }));
+  return _drawColorChallengePage.apply(this, arguments);
 }
 
 drawMainPage();
@@ -6882,7 +7002,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49408" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49915" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

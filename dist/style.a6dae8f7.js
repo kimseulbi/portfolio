@@ -176,7 +176,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./images/logo.svg":[["logo.7a7149fb.svg","scss/images/logo.svg"],"scss/images/logo.svg"],"./images/chan_main.jpg":[["chan_main.c19e532d.jpg","scss/images/chan_main.jpg"],"scss/images/chan_main.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./images/logo.svg":[["logo.7a7149fb.svg","scss/images/logo.svg"],"scss/images/logo.svg"],"./images/chan_main.jpg":[["chan_main.c19e532d.jpg","scss/images/chan_main.jpg"],"scss/images/chan_main.jpg"],"./images/baemin.jpg":[["baemin.874a1f04.jpg","scss/images/baemin.jpg"],"scss/images/baemin.jpg"],"./images/baseball.jpg":[["baseball.5cdb2273.jpg","scss/images/baseball.jpg"],"scss/images/baseball.jpg"],"./images/color.jpg":[["color.165c5f81.jpg","scss/images/color.jpg"],"scss/images/color.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -203,7 +203,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49408" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49915" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

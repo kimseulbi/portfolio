@@ -62,16 +62,16 @@
       </footer>
     </div>
 
-  <!-- navigation -->
-  <template id="navigation">
-    <h2 class="readable-hidden">메인메뉴</h2>
-    <ul class="menu">
-      <li class="menu__item"><a href="#portfolio">PORTFOLIO</a></li>
-      <li class="menu__item"><a href="#about">ABOUT</a></li>
-      <li class="menu__item"><a href="#contact">CONTACT</a></li>
-      <!-- <li class="menu__item"><a href="#resume" target="_blank">RESUME</a></li> -->
-    </ul>
-  </template>
+    <!-- navigation -->
+    <template id="navigation">
+      <h2 class="readable-hidden">메인메뉴</h2>
+      <ul class="menu">
+        <li class="menu__item"><a href="#portfolio">PORTFOLIO</a></li>
+        <li class="menu__item"><a href="#about">ABOUT</a></li>
+        <li class="menu__item"><a href="#contact">CONTACT</a></li>
+        <li class="menu__item"><a href="./kimseulbi_ resume.pdf" target="_blank">RESUME</a></li>
+      </ul>
+    </template>
 
     <!-- main -->
     <template id="main">
@@ -121,27 +121,24 @@
         </section>
         <section class="protfo" id="portfolio">
           <figure class="protfo__img--baeminchan">
-            <!-- <a href="https://baeminchan.netlify.com" target="_blank"></a> -->
               <img src="./scss/images/chan_sub.jpg" alt="배민찬카피프로젝트" class="protfo__img"/>
-            <!-- </a> -->
             <!-- <div class="img-cover">
               <button class="btn-info">view info</button>
               <button class="btn-site">view site</button>
             </div> -->
           </figure>
           <figure class="protfo__img--baemin">
-            <!-- <a href="https://fds-mid-project.netlify.com" target="_blank" > -->
               <img
                 src="./scss/images/baemin.jpg"
                 alt="배민문방구카피프로젝트"
                 class="protfo__img"
               />
-            <!-- </a> -->
           </figure>
           <figure class="protfo__img--baseball">
-            <!-- <a href="https://clever-tesla-02b461.netlify.com" target="_blank"> -->
               <img src="./scss/images/baseball.jpg" alt="숫자야구게임" class="protfo__img" />
-            <!-- </a> -->
+          </figure>
+          <figure class="protfo__img--rgb">
+            <img src="./scss/images/color.jpg" alt="RGB Challenge 카피 게임" class="protfo__img" />
           </figure>
         </section>
         <section class="about__bg" id="about">
@@ -179,35 +176,35 @@
                 </li>
                 <li class="award__item">
                   <h6 class="bage">2018</h6>
-                  <span>패스트캠퍼스 스쿨 11기 프론트엔드과정 수료</span>
+                  <p>패스트캠퍼스 스쿨 11기 프론트엔드과정 수료</p>
                 </li>
                 <li class="award__item">
                   <h6 class="bage">2017</h6>
-                  <span>theBettertech 입사</span>
+                  <p>theBettertech 입사</p>
                 </li>
                 <li class="award__item">
                   <h6 class="bage">2016</h6>
-                  <span>블로터 디자이너를 위한 디자인 및 코딩 과정 수료</span>
+                  <p>블로터 디자이너를 위한 디자인 및 코딩 과정 수료</p>
                 </li>
                 <li class="award__item">
                   <h6 class="bage">2015</h6>
-                  <span>패스트캠퍼스 모바일 앱디자인 수료</span>
+                  <p>패스트캠퍼스 모바일 앱디자인 수료</p>
                 </li>
                 <li class="award__item">
                   <h6 class="bage">2014</h6>
-                  <span>삼성SDS 스마트폰 앱 UX/UI 설계 및 디자인 수료</span></br>
-                  <span>삼성SDS HTML5 & CSS3 Fundamental 수료</span></br>
-                  <span>theboan 입사</span>
+                  <p>삼성SDS 스마트폰 앱 UX/UI 설계 및 디자인 수료</br>
+                  삼성SDS HTML5 & CSS3 Fundamental 수료</br>
+                  theboan 입사</p>
                 </li>
                 <!-- <li class="award__item">
                   <h6 class="bage">2013</h6>
-                  <span>아이티월 Android기반 2D/3D 스마트폰 Game 개발 과정 수료</span></br>
-                  <span>MAYA 3D모델링 수료</span>
+                  <p>아이티월 Android기반 2D/3D 스마트폰 Game 개발 과정 수료</p></br>
+                  <p>MAYA 3D모델링 수료</p>
                 </li> -->
               </ul>
             </div>
           </div>
-        </span>
+        </section>
         <!-- <section class="toolbox">
           <h2 class="toolbox__heading">MY TOOLBOX</h2>
           <div class="toolbox__item">
@@ -223,11 +220,11 @@
         </section> -->
       </main>
     </template>
-    
-   <!-- baeminchan -->
+      
+    <!-- baeminchan -->
     <template id="baeminchan">
       <div class="sub">
-        <div class="visual__bg">
+        <div class="visual__bg chan__img">
         </div>
         <div class="visual">
           <div class="visual__area">
@@ -273,7 +270,159 @@
           </div>
         </article>
         <div class="back__area">
-          <a href="./index.html">
+          <a href="./index.html" class="btn__back">
+            <h3><i class="far fa-arrow-alt-circle-left"></i>&nbsp;Back to portfolio</h3>
+          </a>
+        </div>
+      </div>
+    </template>
+
+    <!-- baemin -->
+    <template id="baemin">
+      <div class="sub">
+        <div class="visual__bg baemin__img"></div>
+        <div class="visual">
+          <div class="visual__area">
+            <h2 class="visual__text bounceInDown"><span>Store Baemin Copy</span></h2>
+          </div>
+        </div>
+        <article class="article">
+          <div class="site__info">
+            <ul class="info__list">
+              <li class="info__item">
+                <h6>프로젝트명</h6>
+                <p>배민 문방구 카피 프로젝트</p>
+              </li>
+              <li class="info__item">
+                <h6>기간</h6>
+                <p>2018.11.07 ~ 2018.11.11</p>
+              </li>
+              <li class="info__item">
+                <h6>내용</h6>
+                <ol>
+                  <li>VanillaJS를 사용하여 배민문방구의 카피사이트를 구현</li>
+                  <li>Glitch server를 이용하여 DB로 재 가공 및 API call</li>
+                  <li>담당: 반찬목록화면, 반찬상세화면, 반찬 검색필터화면, 게시판 기능</li>
+                  <li>메인화면제작, 카테고리별 화면 필터링, 장바구니에 아이템 넣기, 장바구니 화면 출력</li>
+                  <li>Git을 활용으로 프로젝트 코드 형상관리</li>
+                </ol>
+                <span class="tag">JavaScript DOM</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span
+                  class="tag">npm</span> <span class="tag">Git</span> <span class="tag">GitHub</span> 
+              </li>
+              <li class="info__icon">
+                <a href="https://github.com/kimseulbi/fds-mid-project" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://fds-mid-project.netlify.com" target="_blank">
+                  <i class="fab fa-chrome"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <div class="back__area">
+          <a  href="./index.html" class="btn__back">
+            <h3><i class="far fa-arrow-alt-circle-left"></i>&nbsp;Back to portfolio</h3>
+          </a>
+        </div>
+      </div>
+    </template>
+
+    <!-- baseball -->
+    <template id="baseball">
+      <div class="sub">
+        <div class="visual__bg baseball__img"></div>
+        <div class="visual">
+          <div class="visual__area">
+            <h2 class="visual__text bounceInDown"><span>Number baseball</span></h2>
+          </div>
+        </div>
+        <article class="article">
+          <div class="site__info">
+            <ul class="info__list">
+              <li class="info__item">
+                <h6>프로젝트명</h6>
+                <p>숫자야구게임 프로젝트</p>
+              </li>
+              <li class="info__item">
+                <h6>기간</h6>
+                <p>2018.10.22 ~ 2018.10.26</p>
+              </li>
+              <li class="info__item">
+                <h6>내용</h6>
+                <ol>
+                  <li>VanillaJS를 사용하여 숫자야구게임 구현</li>
+                  <li>2명이 한 팀이 되어 기획부터 디자인, 개발까지 진행</li>
+                  <li>화면출력 및 야구게임 알고리즘 개발 </li>
+                  <li>협업과정에서 GitHub, Google Drive, Slack, Git 등을 활용하여 협업</li>
+                  <li>Git을 활용으로 프로젝트 코드 형상관리</li>
+                </ol>
+                <span class="tag">JavaScript DOM</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span
+                  class="tag">npm</span> <span class="tag">Git</span> <span class="tag">GitHub</span>
+              </li>
+              <li class="info__icon">
+                <a href="https://github.com/kimseulbi/hackathon-baseball-game" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://clever-tesla-02b461.netlify.com" target="_blank">
+                  <i class="fab fa-chrome"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <div class="back__area">
+          <a href="./index.html" class="btn__back">
+            <h3><i class="far fa-arrow-alt-circle-left"></i>&nbsp;Back to portfolio</h3>
+          </a>
+        </div>
+      </div>
+    </template>
+
+    <!-- RGB Challenge -->
+    <template id="colorChallenge">
+      <div class="sub">
+        <div class="visual__bg colorChallenge__img"></div>
+        <div class="visual">
+          <div class="visual__area">
+            <h2 class="visual__text bounceInDown"><span>RGB Challenge Copy</span></h2>
+          </div>
+        </div>
+        <article class="article">
+          <div class="site__info">
+            <ul class="info__list">
+              <li class="info__item">
+                <h6>프로젝트명</h6>
+                <p>RGB Challenge 카피 프로젝트</p>
+              </li>
+              <li class="info__item">
+                <h6>기간</h6>
+                <p>2018.10.17 ~ 2018.10.19</p>
+              </li>
+              <li class="info__item">
+                <h6>내용</h6>
+                <ol>
+                  <li>VanillaJS를 사용하여 RGB Challenge 카피 프로젝트를 구현</li>
+                  <li> <a href="http://www.rgbchallenge.com" class="link">http://www.rgbchallenge.com</a> 카피 프로젝트</li>
+                  <li>담당: 반찬목록화면, 반찬상세화면, 반찬 검색필터화면, 게시판 기능</li>
+                  <li>Git을 활용으로 프로젝트 코드 형상관리</li>
+                </ol>
+                <span class="tag">JavaScript DOM</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span
+                  class="tag">npm</span> <span class="tag">Git</span> <span class="tag">GitHub</span>
+              </li>
+              <li class="info__icon">
+                <a href="hhttps://github.com/kimseulbi/fds-rgb-challenge" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://vigilant-hamilton-a02060.netlify.com/" target="_blank">
+                  <i class="fab fa-chrome"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <div class="back__area">
+          <a href="./index.html" class="btn__back">
             <h3><i class="far fa-arrow-alt-circle-left"></i>&nbsp;Back to portfolio</h3>
           </a>
         </div>

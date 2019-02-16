@@ -178,8 +178,7 @@ p {
 .visual,
 .about,
 .protfo__img,
-.article,
-.back__area {
+.article {
   max-width: 1170px;
   margin: 0 auto; }
 
@@ -248,7 +247,8 @@ p {
 @media (max-width: 600px) {
   .header {
     grid-column: 1 / span 8;
-    grid-row: 1/2; }
+    grid-row: 1/2;
+    font-size: 1.4rem; }
     .header .logo {
       margin: 3rem auto; }
     .header .navigation .menu {
@@ -294,7 +294,7 @@ p {
 
 .visual {
   color: #1a1406;
-  padding: 8rem 3rem; }
+  padding: 12rem 3rem 8rem; }
   .visual h2 {
     font-size: 2.6rem; }
   .visual span {
@@ -383,11 +383,12 @@ p {
     border-radius: 1rem;
     border: 1px solid #d6e2de;
     -webkit-filter: grayscale(100%);
-    filter: gray;
-    cursor: pointer; }
+    filter: gray; }
     .main .protfo img:hover {
+      transition: 0.5s;
       -webkit-filter: grayscale(0%);
-      filter: none; }
+      filter: none;
+      box-shadow: 0 2px 6px 3px rgba(0, 0, 0, 0.08); }
 
 .main .about__bg {
   padding: 8rem 3.5rem;
@@ -428,28 +429,22 @@ p {
   .main .about__bg .about .award {
     display: flex;
     align-items: center; }
-    .main .about__bg .about .award__item {
-      position: relative;
-      padding-left: 100px;
-      margin-bottom: 1rem; }
-      .main .about__bg .about .award__item .bage {
-        display: inline-block;
-        color: white;
-        border-radius: 5px;
-        background-color: #1fc8a9;
-        width: 80px;
-        text-align: center;
-        font-size: 1.6rem;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 600;
-        padding: 2px;
-        position: absolute;
-        top: 3px;
-        left: 0;
-        text-align: center; }
-      .main .about__bg .about .award__item span {
-        font-size: 1.6rem;
-        word-break: keep-all; }
+    .main .about__bg .about .award__item .bage {
+      color: white;
+      border-radius: 5px;
+      background-color: #1fc8a9;
+      width: 80px;
+      text-align: center;
+      font-size: 1.6rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      padding: 2px;
+      top: 3px;
+      left: 0;
+      text-align: center; }
+    .main .about__bg .about .award__item span {
+      font-size: 1.6rem;
+      word-break: keep-all; }
 
 .main .toolbox {
   display: grid; }
@@ -468,6 +463,14 @@ p {
     grid-row-gap: 30px; }
     .main .about__bg .about .profile__img {
       display: none; }
+  .main .about__bg .award__item {
+    margin-bottom: 2rem;
+    padding-left: 0; }
+    .main .about__bg .award__item .bage {
+      display: block;
+      position: relative; }
+    .main .about__bg .award__item p {
+      margin-top: 1rem; }
   .main .toolbox {
     grid-template-columns: 1fr;
     padding: 0 3.5rem; }
@@ -491,6 +494,13 @@ p {
     grid-row-gap: 35px; }
     .main .about__bg .about .profile__img {
       display: none; }
+  .main .about__bg .award__item {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 1rem; }
+    .main .about__bg .award__item .bage {
+      display: inline-block;
+      position: absolute; }
   .main .toolbox {
     grid-template-columns: 1fr;
     padding: 0 3.5rem; }
@@ -505,7 +515,7 @@ p {
 @media (min-width: 961px) {
   .main .protfo {
     grid-template-columns: repeat(12, 1fr);
-    padding: 10rem 3.5rem; }
+    padding: 12rem 3.5rem; }
     .main .protfo figure {
       grid-column: span 6; }
   .main .about__bg .about {
@@ -527,6 +537,13 @@ p {
     .main .about__bg .about .award {
       grid-column: 9 / span 4;
       grid-row: 2/3; }
+      .main .about__bg .about .award .award__item {
+        position: relative;
+        padding-left: 100px;
+        margin-bottom: 1rem; }
+        .main .about__bg .about .award .award__item .bage {
+          display: inline-block;
+          position: absolute; }
   .main .toolbox {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 0 3.5rem; }
@@ -579,13 +596,30 @@ p {
 .sub {
   display: grid;
   width: 100%; }
+  .sub .link {
+    color: #339af0; }
+    .sub .link:hover {
+      text-decoration: underline; }
+  .sub .chan__img {
+    background: url(chan_main.c19e532d.jpg) no-repeat; }
+  .sub .baemin__img {
+    background: url(baemin.874a1f04.jpg) no-repeat; }
+  .sub .baseball__img {
+    background: url(baseball.5cdb2273.jpg) no-repeat; }
+  .sub .colorChallenge__img {
+    background: url(color.165c5f81.jpg) no-repeat; }
   .sub .visual__bg {
-    background: url(chan_main.c19e532d.jpg) no-repeat;
+    -webkit-filter: grayscale(0%);
+    filter: none;
     background-size: cover;
-    background-position: 0 0;
-    background-color: #eef3f7;
+    background-position: 50% 50%;
     position: relative;
-    height: 450px; }
+    height: 450px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+    .sub .visual__bg:hover {
+      -webkit-filter: grayscale(100%);
+      filter: gray;
+      transition: 0.5s; }
   .sub .article {
     width: 100%; }
     .sub .article .site__info {
@@ -618,7 +652,8 @@ p {
   .sub .back__area {
     padding: 0 3.5rem; }
   .sub .back__area {
-    margin: 100px 0; }
+    margin: 100px auto;
+    max-width: 1170px; }
     .sub .back__area a h3 {
       color: #999;
       font-weight: 600;
