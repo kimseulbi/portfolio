@@ -159,7 +159,8 @@ input:focus {
   outline: none; }
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth; }
 
 body {
   background: #fff;
@@ -169,6 +170,9 @@ body {
   color: #1a1406; }
 
 ::selection {
+  background: rgba(31, 200, 169, 0.2); }
+
+::-moz-selection {
   background: rgba(31, 200, 169, 0.2); }
 
 p {

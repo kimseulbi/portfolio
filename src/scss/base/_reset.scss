@@ -163,6 +163,7 @@ input {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
   background: $body-bg;
@@ -172,6 +173,9 @@ body {
   color: $font-base;
 }
 ::selection {
+  background: rgba($color: $brand-point, $alpha: 0.2);
+}
+::-moz-selection {
   background: rgba($color: $brand-point, $alpha: 0.2);
 }
 p {

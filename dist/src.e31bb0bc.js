@@ -6799,7 +6799,12 @@ function _drawMainPage() {
             baeminchanImgEl = frag2.querySelector(".protfo__img--baeminchan");
             baeminImgEl = frag2.querySelector(".protfo__img--baemin");
             baseballImgEl = frag2.querySelector(".protfo__img--baseball");
-            colorChallengeImgEl = frag2.querySelector(".protfo__img--rgb"); // 5. 이벤트 리스너 등록하기
+            colorChallengeImgEl = frag2.querySelector(".protfo__img--rgb");
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth"
+            }); // 5. 이벤트 리스너 등록하기
 
             baeminchanImgEl.addEventListener("click", function (e) {
               drawBaeminchanPage();
@@ -6827,7 +6832,7 @@ function _drawMainPage() {
             navEl.appendChild(frag1);
             rootEl.appendChild(frag2);
 
-          case 14:
+          case 15:
           case "end":
             return _context.stop();
         }
@@ -6853,7 +6858,12 @@ function _drawBaeminchanPage() {
           case 0:
             // 1. 템플릿 복사
             frag1 = document.importNode(templates.nav, false);
-            frag2 = document.importNode(templates.baeminchan, true); // // 2. 요소 선택
+            frag2 = document.importNode(templates.baeminchan, true);
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth"
+            }); // // 2. 요소 선택
             // const btnBackEl = frag2.querySelector(".btn__back");
             // // 5. 이벤트 리스너 등록하기
             // btnBackEl.addEventListener("click", e => {
@@ -6866,7 +6876,7 @@ function _drawBaeminchanPage() {
             navEl.appendChild(frag1);
             rootEl.appendChild(frag2);
 
-          case 6:
+          case 7:
           case "end":
             return _context2.stop();
         }
@@ -6892,14 +6902,19 @@ function _drawBaeminPage() {
           case 0:
             // 1. 템플릿 복사
             frag1 = document.importNode(templates.nav, false);
-            frag2 = document.importNode(templates.baemin, true); // 6. 템플릿을 문서에 삽입
+            frag2 = document.importNode(templates.baemin, true);
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth"
+            }); // 6. 템플릿을 문서에 삽입
 
             navEl.textContent = "";
             rootEl.textContent = "";
             navEl.appendChild(frag1);
             rootEl.appendChild(frag2);
 
-          case 6:
+          case 7:
           case "end":
             return _context3.stop();
         }
@@ -6925,14 +6940,19 @@ function _drawBaseballPage() {
           case 0:
             // 1. 템플릿 복사
             frag1 = document.importNode(templates.nav, false);
-            frag2 = document.importNode(templates.baseball, true); // 6. 템플릿을 문서에 삽입
+            frag2 = document.importNode(templates.baseball, true);
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth"
+            }); // 6. 템플릿을 문서에 삽입
 
             navEl.textContent = "";
             rootEl.textContent = "";
             navEl.appendChild(frag1);
             rootEl.appendChild(frag2);
 
-          case 6:
+          case 7:
           case "end":
             return _context4.stop();
         }
@@ -6957,14 +6977,19 @@ function _drawColorChallengePage() {
           case 0:
             // 1. 템플릿 복사
             frag1 = document.importNode(templates.nav, false);
-            frag2 = document.importNode(templates.colorChallenge, true); // 6. 템플릿을 문서에 삽입
+            frag2 = document.importNode(templates.colorChallenge, true);
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth"
+            }); // 6. 템플릿을 문서에 삽입
 
             navEl.textContent = "";
             rootEl.textContent = "";
             navEl.appendChild(frag1);
             rootEl.appendChild(frag2);
 
-          case 6:
+          case 7:
           case "end":
             return _context5.stop();
         }
@@ -7002,7 +7027,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49915" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58307" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

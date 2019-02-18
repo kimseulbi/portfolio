@@ -29,6 +29,11 @@ async function drawMainPage() {
   const baeminImgEl = frag2.querySelector(".protfo__img--baemin");
   const baseballImgEl = frag2.querySelector(".protfo__img--baseball");
   const colorChallengeImgEl = frag2.querySelector(".protfo__img--rgb");
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
   // 5. 이벤트 리스너 등록하기
   baeminchanImgEl.addEventListener("click", e => {
     drawBaeminchanPage();
@@ -65,6 +70,11 @@ async function drawBaeminchanPage() {
   // 1. 템플릿 복사
   const frag1 = document.importNode(templates.nav, false);
   const frag2 = document.importNode(templates.baeminchan, true);
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
   // // 2. 요소 선택
   // const btnBackEl = frag2.querySelector(".btn__back");
   // // 5. 이벤트 리스너 등록하기
@@ -83,6 +93,11 @@ async function drawBaeminPage() {
   // 1. 템플릿 복사
   const frag1 = document.importNode(templates.nav, false);
   const frag2 = document.importNode(templates.baemin, true);
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
   // 6. 템플릿을 문서에 삽입
   navEl.textContent = "";
   rootEl.textContent = "";
@@ -95,6 +110,11 @@ async function drawBaseballPage() {
   // 1. 템플릿 복사
   const frag1 = document.importNode(templates.nav, false);
   const frag2 = document.importNode(templates.baseball, true);
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
   // 6. 템플릿을 문서에 삽입
   navEl.textContent = "";
   rootEl.textContent = "";
@@ -107,6 +127,11 @@ async function drawColorChallengePage() {
   // 1. 템플릿 복사
   const frag1 = document.importNode(templates.nav, false);
   const frag2 = document.importNode(templates.colorChallenge, true);
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
   // 6. 템플릿을 문서에 삽입
   navEl.textContent = "";
   rootEl.textContent = "";
