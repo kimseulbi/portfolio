@@ -34,7 +34,6 @@ async function drawMainPage() {
     left: 0,
     behavior: "smooth"
   });
-  window.history.pushState({ data: "main" }, "", "/main");
   // 5. 이벤트 리스너 등록하기
   baeminchanImgEl.addEventListener("click", e => {
     window.history.pushState({ data: "baeminchan" }, "", "/baeminchan");
