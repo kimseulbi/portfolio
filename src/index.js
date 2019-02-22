@@ -37,19 +37,19 @@ async function drawMainPage() {
   window.history.pushState({ data: "" }, "", "");
   // 5. 이벤트 리스너 등록하기
   baeminchanImgEl.addEventListener("click", e => {
-    window.history.pushState({ data: "baeminchan" }, "", "/baeminchan");
+    // window.history.pushState({ data: "baeminchan" }, "", "/baeminchan");
     drawBaeminchanPage();
   });
   baeminImgEl.addEventListener("click", e => {
-    window.history.pushState({ data: "baemin" }, "", "/storeBaemin");
+    // window.history.pushState({ data: "baemin" }, "", "/storeBaemin");
     drawBaeminPage();
   });
   baseballImgEl.addEventListener("click", e => {
-    window.history.pushState({ data: "baseball" }, "", "/baseball");
+    // window.history.pushState({ data: "baseball" }, "", "/baseball");
     drawBaseballPage();
   });
   colorChallengeImgEl.addEventListener("click", e => {
-    window.history.pushState({ data: "colorchallenge" }, "", "/colorChallenge");
+    // window.history.pushState({ data: "colorchallenge" }, "", "/colorChallenge");
     drawColorChallengePage();
   });
 

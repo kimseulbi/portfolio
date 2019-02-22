@@ -6810,27 +6810,19 @@ function _drawMainPage() {
             }, "", ""); // 5. 이벤트 리스너 등록하기
 
             baeminchanImgEl.addEventListener("click", function (e) {
-              window.history.pushState({
-                data: "baeminchan"
-              }, "", "/baeminchan");
+              // window.history.pushState({ data: "baeminchan" }, "", "/baeminchan");
               drawBaeminchanPage();
             });
             baeminImgEl.addEventListener("click", function (e) {
-              window.history.pushState({
-                data: "baemin"
-              }, "", "/storeBaemin");
+              // window.history.pushState({ data: "baemin" }, "", "/storeBaemin");
               drawBaeminPage();
             });
             baseballImgEl.addEventListener("click", function (e) {
-              window.history.pushState({
-                data: "baseball"
-              }, "", "/baseball");
+              // window.history.pushState({ data: "baseball" }, "", "/baseball");
               drawBaseballPage();
             });
             colorChallengeImgEl.addEventListener("click", function (e) {
-              window.history.pushState({
-                data: "colorchallenge"
-              }, "", "/colorChallenge");
+              // window.history.pushState({ data: "colorchallenge" }, "", "/colorChallenge");
               drawColorChallengePage();
             }); // const imgCoverEl = protfoImgEl.querySelector(".img-cover");
             // 프로젝트 이미지 호버시 버튼 출력
