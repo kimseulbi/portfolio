@@ -6804,18 +6804,33 @@ function _drawMainPage() {
               top: 0,
               left: 0,
               behavior: "smooth"
-            }); // 5. 이벤트 리스너 등록하기
+            });
+            window.history.pushState({
+              data: "main"
+            }, "", "/main"); // 5. 이벤트 리스너 등록하기
 
             baeminchanImgEl.addEventListener("click", function (e) {
+              window.history.pushState({
+                data: "baeminchan"
+              }, "", "/baeminchan");
               drawBaeminchanPage();
             });
             baeminImgEl.addEventListener("click", function (e) {
+              window.history.pushState({
+                data: "baemin"
+              }, "", "/storeBaemin");
               drawBaeminPage();
             });
             baseballImgEl.addEventListener("click", function (e) {
+              window.history.pushState({
+                data: "baseball"
+              }, "", "/baseball");
               drawBaseballPage();
             });
             colorChallengeImgEl.addEventListener("click", function (e) {
+              window.history.pushState({
+                data: "colorchallenge"
+              }, "", "/colorChallenge");
               drawColorChallengePage();
             }); // const imgCoverEl = protfoImgEl.querySelector(".img-cover");
             // 프로젝트 이미지 호버시 버튼 출력
@@ -6832,7 +6847,7 @@ function _drawMainPage() {
             navEl.appendChild(frag1);
             rootEl.appendChild(frag2);
 
-          case 15:
+          case 16:
           case "end":
             return _context.stop();
         }
@@ -6863,7 +6878,7 @@ function _drawBaeminchanPage() {
               top: 0,
               left: 0,
               behavior: "smooth"
-            }); // // 2. 요소 선택
+            }); // // // 2. 요소 선택
             // const btnBackEl = frag2.querySelector(".btn__back");
             // // 5. 이벤트 리스너 등록하기
             // btnBackEl.addEventListener("click", e => {

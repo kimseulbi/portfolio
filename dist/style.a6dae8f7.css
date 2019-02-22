@@ -605,13 +605,13 @@ p {
     .sub .link:hover {
       text-decoration: underline; }
   .sub .chan__img {
-    background: url(chan_main.c19e532d.jpg) no-repeat; }
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817572/chan_sub.jpg) no-repeat; }
   .sub .baemin__img {
-    background: url(baemin.874a1f04.jpg) no-repeat; }
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817576/baemin.jpg) no-repeat; }
   .sub .baseball__img {
-    background: url(baseball.5cdb2273.jpg) no-repeat; }
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817575/baseball.jpg) no-repeat; }
   .sub .colorChallenge__img {
-    background: url(color.165c5f81.jpg) no-repeat; }
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817553/color.jpg) no-repeat; }
   .sub .visual__bg {
     -webkit-filter: grayscale(0%);
     filter: none;

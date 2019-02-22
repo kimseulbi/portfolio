@@ -34,17 +34,22 @@ async function drawMainPage() {
     left: 0,
     behavior: "smooth"
   });
+  window.history.pushState({ data: "main" }, "", "/main");
   // 5. 이벤트 리스너 등록하기
   baeminchanImgEl.addEventListener("click", e => {
+    window.history.pushState({ data: "baeminchan" }, "", "/baeminchan");
     drawBaeminchanPage();
   });
   baeminImgEl.addEventListener("click", e => {
+    window.history.pushState({ data: "baemin" }, "", "/storeBaemin");
     drawBaeminPage();
   });
   baseballImgEl.addEventListener("click", e => {
+    window.history.pushState({ data: "baseball" }, "", "/baseball");
     drawBaseballPage();
   });
   colorChallengeImgEl.addEventListener("click", e => {
+    window.history.pushState({ data: "colorchallenge" }, "", "/colorChallenge");
     drawColorChallengePage();
   });
 
@@ -75,7 +80,7 @@ async function drawBaeminchanPage() {
     left: 0,
     behavior: "smooth"
   });
-  // // 2. 요소 선택
+  // // // 2. 요소 선택
   // const btnBackEl = frag2.querySelector(".btn__back");
   // // 5. 이벤트 리스너 등록하기
   // btnBackEl.addEventListener("click", e => {
