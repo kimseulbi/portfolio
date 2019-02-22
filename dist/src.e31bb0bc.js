@@ -6804,7 +6804,10 @@ function _drawMainPage() {
               top: 0,
               left: 0,
               behavior: "smooth"
-            }); // 5. 이벤트 리스너 등록하기
+            });
+            window.history.pushState({
+              data: ""
+            }, "", ""); // 5. 이벤트 리스너 등록하기
 
             baeminchanImgEl.addEventListener("click", function (e) {
               window.history.pushState({
@@ -6844,7 +6847,7 @@ function _drawMainPage() {
             navEl.appendChild(frag1);
             rootEl.appendChild(frag2);
 
-          case 15:
+          case 16:
           case "end":
             return _context.stop();
         }
