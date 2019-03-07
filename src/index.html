@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SEUL PORTFO</title>
     <link rel="stylesheet" href="./scss/style.scss" />
     <link
@@ -52,7 +53,7 @@
             </div>
           </div>
           <small class="copyright">
-            Copyright since &copy; 2018 by Seulbi Kim.
+            Copyright since &copy; 2019 by Seulbi Kim.
           </small>
         </div>
       </footer>
@@ -123,10 +124,6 @@
         <section class="protfo" id="portfolio">
           <figure class="protfo__img--baeminchan">
               <img src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817572/chan_sub.jpg" alt="배민찬카피프로젝트" class="protfo__img" />
-            <!-- <div class="img-cover">
-              <button class="btn-info">view info</button>
-              <button class="btn-site">view site</button>
-            </div> -->
           </figure>
           <figure class="protfo__img--baemin">
               <img
@@ -225,6 +222,11 @@
     <!-- baeminchan -->
     <template id="baeminchan">
       <div class="sub">
+        <button class="btn__back">
+          <a href="./index.html">
+            <i class="far fa-arrow-alt-circle-left"></i> <span>Back to portfolio</span>
+          </a>
+        </button>
         <div class="visual__bg chan__img">
         </div>
         <div class="visual">
@@ -270,17 +272,17 @@
             </ul>
           </div>
         </article>
-        <div class="back__area">
-          <a href="./index.html" class="btn__back">
-            <h3><i class="far fa-arrow-alt-circle-left"></i>&nbsp;Back to portfolio</h3>
-          </a>
-        </div>
       </div>
     </template>
 
     <!-- baemin -->
     <template id="baemin">
       <div class="sub">
+                <button class="btn__back">
+                  <a href="./index.html">
+                    <i class="far fa-arrow-alt-circle-left"></i> <span>Back to portfolio</span>
+                  </a>
+                  </button>
         <div class="visual__bg baemin__img"></div>
         <div class="visual">
           <div class="visual__area">
@@ -321,17 +323,17 @@
             </ul>
           </div>
         </article>
-        <div class="back__area">
-          <a  href="./index.html" class="btn__back">
-            <h3><i class="far fa-arrow-alt-circle-left"></i>&nbsp;Back to portfolio</h3>
-          </a>
-        </div>
       </div>
     </template>
 
     <!-- baseball -->
     <template id="baseball">
       <div class="sub">
+      <button class="btn__back">
+        <a href="./index.html">
+          <i class="far fa-arrow-alt-circle-left"></i> <span>Back to portfolio</span>
+        </a>
+      </button>
         <div class="visual__bg baseball__img"></div>
         <div class="visual">
           <div class="visual__area">
@@ -372,17 +374,17 @@
             </ul>
           </div>
         </article>
-        <div class="back__area">
-          <a href="./index.html" class="btn__back">
-            <h3><i class="far fa-arrow-alt-circle-left"></i>&nbsp;Back to portfolio</h3>
-          </a>
-        </div>
       </div>
     </template>
 
     <!-- RGB Challenge -->
     <template id="colorChallenge">
       <div class="sub">
+        <button class="btn__back">
+          <a href="./index.html">
+            <i class="far fa-arrow-alt-circle-left"></i> <span>Back to portfolio</span>
+          </a>
+        </button>
         <div class="visual__bg colorChallenge__img"></div>
         <div class="visual">
           <div class="visual__area">
@@ -422,14 +424,8 @@
             </ul>
           </div>
         </article>
-        <div class="back__area">
-          <a href="./index.html" class="btn__back">
-            <h3><i class="far fa-arrow-alt-circle-left"></i>&nbsp;Back to portfolio</h3>
-          </a>
-        </div>
       </div>
     </template>
-
     <script src="./index.js"></script>
   </body>
 </html>
