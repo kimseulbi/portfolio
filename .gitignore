@@ -1,6 +1,6 @@
 # Parcel
 .cache/*
-dist/
+dist/*
 
 # Logs
 logs
