@@ -3,8 +3,8 @@
   width: 100%;
   position: relative;
   .btn__back {
-    background: #fff;
     padding: 1.5rem 2rem;
+    background: #fff;
     border: 1px solid #d6e2de;
     border-radius: 4rem;
     z-index: 100;
@@ -13,6 +13,7 @@
     bottom: 2.3rem;
     right: 2.3rem;
     a {
+      padding: 1.5rem 2rem;
       color: #999;
       font-weight: 600;
       font-size: 2rem;
