@@ -16,43 +16,191 @@
   }
   .mouse {
     position: relative;
-    border: 2px solid $font-base;
-    border-radius: 15px;
-    height: 30px;
-    width: 20px;
+    background: $font-base
+      linear-gradient(
+        transparent 0%,
+        transparent 50%,
+        $font-base 50%,
+        $font-base 100%
+      );
+    position: relative;
+    width: 34px;
+    height: 58px;
+    background-size: 100% 100%;
+    border-radius: 100px;
+    background-size: 225%;
+    animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
     margin: 0 auto;
-    display: block;
-    z-index: 10;
-    top: 30px;
-    .wheel {
-      position: relative;
-      border-radius: 10px;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+    &::before {
+      width: 28px;
+      height: 52px;
+      background-color: #fff;
+      border-radius: 100px;
+    }
+    &::after {
       background: $font-base;
-      width: 2px;
-      height: 8px;
-      top: 3px;
-      margin-left: auto;
-      margin-right: auto;
-      animation-name: drop;
-      animation-duration: 1s;
-      animation-timing-function: linear;
-      animation-delay: 0s;
-      animation-iteration-count: infinite;
-      animation-play-state: running;
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      animation: trackBallSlide 5s linear infinite;
+    }
+    @keyframes colorSlide {
+      0% {
+        background-position: 0% 100%;
+      }
+      20% {
+        background-position: 0% 0%;
+      }
+      21% {
+        background-color: #ccc;
+      }
+      29.99% {
+        background-color: $font-base;
+        background-position: 0% 0%;
+      }
+      30% {
+        background-color: #ccc;
+        background-position: 0% 100%;
+      }
+      50% {
+        background-position: 0% 0%;
+      }
+      51% {
+        background-color: #ccc;
+      }
+      59.99% {
+        background-color: $font-base;
+        background-position: 0% 0%;
+      }
+      60% {
+        background-color: #ccc;
+        background-position: 0% 100%;
+      }
+      80% {
+        background-position: 0% 0%;
+      }
+      81% {
+        background-color: #ccc;
+      }
+      89.99%,
+      100% {
+        background-color: $font-base;
+      }
+    }
+    @keyframes trackBallSlide {
+      0% {
+        opacity: 1;
+        transform: scale(1) translateY(-15px);
+      }
+      6% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+      }
+      14% {
+        opacity: 0;
+        transform: scale(0.4) translateY(40px);
+      }
+      15%,
+      19% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-15px);
+      }
+      28%,
+      29.99% {
+        opacity: 1;
+        transform: scale(1) translateY(-15px);
+      }
+      30% {
+        opacity: 1;
+        transform: scale(1) translateY(-15px);
+      }
+      36% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+      }
+      44% {
+        opacity: 0;
+        transform: scale(0.4) translateY(40px);
+      }
+      45%,
+      49% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-15px);
+      }
+      58%,
+      59.99% {
+        opacity: 1;
+        transform: scale(1) translateY(-15px);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1) translateY(-15px);
+      }
+      66% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+      }
+      74% {
+        opacity: 0;
+        transform: scale(0.4) translateY(40px);
+      }
+      75%,
+      79% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-15px);
+      }
+      88%,
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(-15px);
+      }
+    }
+    @keyframes nudgeMouse {
+      0% {
+        transform: translateY(0);
+      }
+      20% {
+        transform: translateY(10px);
+      }
+      30% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+      60% {
+        transform: translateY(0);
+      }
+      80% {
+        transform: translateY(10px);
+      }
+      90% {
+        transform: translateY(0);
+      }
     }
   }
 }
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .visual {
     .mouse {
-      margin: 2rem auto 0;
+      margin: 6rem auto 0;
     }
   }
 }
 @include respond-to("huge") {
   .visual {
     .mouse {
-      margin: 5rem auto 0;
+      margin: 10rem auto 0;
     }
   }
 }

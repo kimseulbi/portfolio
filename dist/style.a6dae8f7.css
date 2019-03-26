@@ -245,8 +245,8 @@ p {
       .header .header__area .menu a:hover, .header .header__area .menu a:active {
         background-image: linear-gradient(0, #1fc8a9, #1fc8a9);
         background-repeat: no-repeat;
-        background-size: 100% 0.2rem;
-        background-position: 0 50%; }
+        background-size: 100% 0.5rem;
+        background-position: 0 75%; }
 
 @media (max-width: 600px) {
   .header {
@@ -311,37 +311,142 @@ p {
     animation-iteration-count: 1; }
   .visual .mouse {
     position: relative;
-    border: 2px solid #1a1406;
-    border-radius: 15px;
-    height: 30px;
-    width: 20px;
-    margin: 0 auto;
-    display: block;
-    z-index: 10;
-    top: 30px; }
-    .visual .mouse .wheel {
-      position: relative;
-      border-radius: 10px;
+    background: #1a1406 linear-gradient(transparent 0%, transparent 50%, #1a1406 50%, #1a1406 100%);
+    position: relative;
+    width: 34px;
+    height: 58px;
+    background-size: 100% 100%;
+    border-radius: 100px;
+    background-size: 225%;
+    animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
+    margin: 0 auto; }
+    .visual .mouse:before, .visual .mouse:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto; }
+    .visual .mouse::before {
+      width: 28px;
+      height: 52px;
+      background-color: #fff;
+      border-radius: 100px; }
+    .visual .mouse::after {
       background: #1a1406;
-      width: 2px;
-      height: 8px;
-      top: 3px;
-      margin-left: auto;
-      margin-right: auto;
-      animation-name: drop;
-      animation-duration: 1s;
-      animation-timing-function: linear;
-      animation-delay: 0s;
-      animation-iteration-count: infinite;
-      animation-play-state: running; }
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      animation: trackBallSlide 5s linear infinite; }
+
+@keyframes colorSlide {
+  0% {
+    background-position: 0% 100%; }
+  20% {
+    background-position: 0% 0%; }
+  21% {
+    background-color: #ccc; }
+  29.99% {
+    background-color: #1a1406;
+    background-position: 0% 0%; }
+  30% {
+    background-color: #ccc;
+    background-position: 0% 100%; }
+  50% {
+    background-position: 0% 0%; }
+  51% {
+    background-color: #ccc; }
+  59.99% {
+    background-color: #1a1406;
+    background-position: 0% 0%; }
+  60% {
+    background-color: #ccc;
+    background-position: 0% 100%; }
+  80% {
+    background-position: 0% 0%; }
+  81% {
+    background-color: #ccc; }
+  89.99%,
+  100% {
+    background-color: #1a1406; } }
+
+@keyframes trackBallSlide {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(-15px); }
+  6% {
+    opacity: 1;
+    transform: scale(0.9) translateY(5px); }
+  14% {
+    opacity: 0;
+    transform: scale(0.4) translateY(40px); }
+  15%,
+  19% {
+    opacity: 0;
+    transform: scale(0.4) translateY(-15px); }
+  28%,
+  29.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-15px); }
+  30% {
+    opacity: 1;
+    transform: scale(1) translateY(-15px); }
+  36% {
+    opacity: 1;
+    transform: scale(0.9) translateY(5px); }
+  44% {
+    opacity: 0;
+    transform: scale(0.4) translateY(40px); }
+  45%,
+  49% {
+    opacity: 0;
+    transform: scale(0.4) translateY(-15px); }
+  58%,
+  59.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-15px); }
+  60% {
+    opacity: 1;
+    transform: scale(1) translateY(-15px); }
+  66% {
+    opacity: 1;
+    transform: scale(0.9) translateY(5px); }
+  74% {
+    opacity: 0;
+    transform: scale(0.4) translateY(40px); }
+  75%,
+  79% {
+    opacity: 0;
+    transform: scale(0.4) translateY(-15px); }
+  88%,
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(-15px); } }
+
+@keyframes nudgeMouse {
+  0% {
+    transform: translateY(0); }
+  20% {
+    transform: translateY(10px); }
+  30% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(10px); }
+  60% {
+    transform: translateY(0); }
+  80% {
+    transform: translateY(10px); }
+  90% {
+    transform: translateY(0); } }
 
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .visual .mouse {
-    margin: 2rem auto 0; } }
+    margin: 6rem auto 0; } }
 
 @media (min-width: 961px) {
   .visual .mouse {
-    margin: 5rem auto 0; } }
+    margin: 10rem auto 0; } }
 
 .main .comp {
   left: 0px;
@@ -398,57 +503,63 @@ p {
   padding: 8rem 3.5rem;
   margin-top: 35px;
   background: #f4f7f6; }
-  .main .about__bg .about__heading .name {
-    font-size: 2.6rem;
-    position: relative;
-    padding-top: 1.8rem; }
-    .main .about__bg .about__heading .name::after {
-      background: #1fc8a9;
-      border-radius: 0.5rem;
-      display: block;
-      width: 5rem;
-      height: 3px;
+  .main .about__bg .about {
+    position: relative; }
+    .main .about__bg .about__heading .name {
+      font-size: 2.6rem;
+      position: relative;
+      padding-top: 1.8rem; }
+      .main .about__bg .about__heading .name::after {
+        background: #1fc8a9;
+        border-radius: 0.5rem;
+        display: block;
+        width: 5rem;
+        height: 3px;
+        position: absolute;
+        top: 0;
+        content: ""; }
+    .main .about__bg .about__heading p {
+      color: #999999; }
+    .main .about__bg .about .profile__img {
+      width: 80%;
+      border-radius: 50%;
+      padding: 15%;
+      background: white;
       position: absolute;
-      top: 0;
-      content: ""; }
-  .main .about__bg .about__heading p {
-    color: #999999; }
-  .main .about__bg .about .profile__img {
-    width: 95%;
-    border-radius: 50%;
-    padding: 10%;
-    background: white; }
-  .main .about__bg .about .skillset {
-    display: flex;
-    align-items: center; }
-    .main .about__bg .about .skillset .skill__list .skill__item {
-      margin-bottom: 2.5rem; }
-      .main .about__bg .about .skillset .skill__list .skill__item h6 {
-        color: #1fc8a9;
-        font-size: 1.8rem;
-        font-weight: 600; }
-      .main .about__bg .about .skillset .skill__list .skill__item p {
-        margin-top: 0.5rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .main .about__bg .about .skillset {
+      display: flex;
+      align-items: center; }
+      .main .about__bg .about .skillset .skill__list .skill__item {
+        margin-bottom: 2.5rem; }
+        .main .about__bg .about .skillset .skill__list .skill__item h6 {
+          color: #1fc8a9;
+          font-size: 1.8rem;
+          font-weight: 600; }
+        .main .about__bg .about .skillset .skill__list .skill__item p {
+          margin-top: 0.5rem;
+          word-break: keep-all; }
+    .main .about__bg .about .award {
+      display: flex;
+      align-items: center; }
+      .main .about__bg .about .award__item .bage {
+        color: white;
+        border-radius: 5px;
+        background-color: #1fc8a9;
+        width: 80px;
+        text-align: center;
+        font-size: 1.6rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        padding: 2px;
+        top: 3px;
+        left: 0;
+        text-align: center; }
+      .main .about__bg .about .award__item span {
+        font-size: 1.6rem;
         word-break: keep-all; }
-  .main .about__bg .about .award {
-    display: flex;
-    align-items: center; }
-    .main .about__bg .about .award__item .bage {
-      color: white;
-      border-radius: 5px;
-      background-color: #1fc8a9;
-      width: 80px;
-      text-align: center;
-      font-size: 1.6rem;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 600;
-      padding: 2px;
-      top: 3px;
-      left: 0;
-      text-align: center; }
-    .main .about__bg .about .award__item span {
-      font-size: 1.6rem;
-      word-break: keep-all; }
 
 .main .toolbox {
   display: grid; }
@@ -560,7 +671,6 @@ p {
         margin-bottom: 3rem; } }
 
 .footer {
-  background: #1fc8a9;
   text-align: center; }
   .footer__heading {
     font-size: 1.6rem; }
@@ -571,7 +681,11 @@ p {
       .footer .footer__area .contact .social-icons {
         font-size: 2rem; }
         .footer .footer__area .contact .social-icons a {
-          padding: 0 2rem; }
+          padding: 0.5rem;
+          cursor: pointer;
+          margin: 0 2rem; }
+          .footer .footer__area .contact .social-icons a:hover, .footer .footer__area .contact .social-icons a:focus {
+            color: #1fc8a9; }
     .footer .footer__area small {
       font-size: 1.2rem; }
 
@@ -602,6 +716,7 @@ p {
   width: 100%;
   position: relative; }
   .sub .btn__back {
+    background: #fff;
     padding: 1.5rem 2rem;
     border: 1px solid #d6e2de;
     border-radius: 4rem;

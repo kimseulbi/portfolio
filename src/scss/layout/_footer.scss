@@ -1,5 +1,4 @@
 .footer {
-  background: $brand-point;
   text-align: center;
   &__heading {
     font-size: 1.6rem;
@@ -11,7 +10,13 @@
       .social-icons {
         font-size: 2rem;
         a {
-          padding: 0 2rem;
+          padding: 0.5rem;
+          cursor: pointer;
+          margin: 0 2rem;
+          &:hover,
+          &:focus {
+            color: $brand-point;
+          }
         }
       }
     }
