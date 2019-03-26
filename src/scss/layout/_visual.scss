@@ -15,6 +15,7 @@
     animation-iteration-count: 1;
   }
   .mouse {
+    top: 40px;
     position: relative;
     background: $font-base
       linear-gradient(
@@ -24,8 +25,8 @@
         $font-base 100%
       );
     position: relative;
-    width: 34px;
-    height: 58px;
+    width: 30px;
+    height: 48px;
     background-size: 100% 100%;
     border-radius: 100px;
     background-size: 225%;
@@ -42,8 +43,8 @@
       margin: auto;
     }
     &::before {
-      width: 28px;
-      height: 52px;
+      width: 24px;
+      height: 42px;
       background-color: #fff;
       border-radius: 100px;
     }
@@ -100,7 +101,7 @@
     @keyframes trackBallSlide {
       0% {
         opacity: 1;
-        transform: scale(1) translateY(-15px);
+        transform: scale(1) translateY(-10px);
       }
       6% {
         opacity: 1;
@@ -108,21 +109,21 @@
       }
       14% {
         opacity: 0;
-        transform: scale(0.4) translateY(40px);
+        transform: scale(0.4) translateY(25px);
       }
       15%,
       19% {
         opacity: 0;
-        transform: scale(0.4) translateY(-15px);
+        transform: scale(0.4) translateY(-10px);
       }
       28%,
       29.99% {
         opacity: 1;
-        transform: scale(1) translateY(-15px);
+        transform: scale(1) translateY(-10px);
       }
       30% {
         opacity: 1;
-        transform: scale(1) translateY(-15px);
+        transform: scale(1) translateY(-10px);
       }
       36% {
         opacity: 1;
@@ -130,21 +131,21 @@
       }
       44% {
         opacity: 0;
-        transform: scale(0.4) translateY(40px);
+        transform: scale(0.4) translateY(25px);
       }
       45%,
       49% {
         opacity: 0;
-        transform: scale(0.4) translateY(-15px);
+        transform: scale(0.4) translateY(-10px);
       }
       58%,
       59.99% {
         opacity: 1;
-        transform: scale(1) translateY(-15px);
+        transform: scale(1) translateY(-10px);
       }
       60% {
         opacity: 1;
-        transform: scale(1) translateY(-15px);
+        transform: scale(1) translateY(-10px);
       }
       66% {
         opacity: 1;
@@ -152,17 +153,17 @@
       }
       74% {
         opacity: 0;
-        transform: scale(0.4) translateY(40px);
+        transform: scale(0.4) translateY(25px);
       }
       75%,
       79% {
         opacity: 0;
-        transform: scale(0.4) translateY(-15px);
+        transform: scale(0.4) translateY(-10px);
       }
       88%,
       100% {
         opacity: 1;
-        transform: scale(1) translateY(-15px);
+        transform: scale(1) translateY(-10px);
       }
     }
     @keyframes nudgeMouse {
@@ -193,14 +194,14 @@
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .visual {
     .mouse {
-      margin: 6rem auto 0;
+      top: 60px;
     }
   }
 }
 @include respond-to("huge") {
   .visual {
     .mouse {
-      margin: 10rem auto 0;
+      top: 100px;
     }
   }
 }
