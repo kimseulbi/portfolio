@@ -6,6 +6,7 @@ const templates = {
   baemin: document.querySelector("#baemin").content,
   baseball: document.querySelector("#baseball").content,
   colorChallenge: document.querySelector("#colorChallenge").content,
+  focs: document.querySelector("#focs").content,
   nav: document.querySelector("#navigation").content
 };
 
