@@ -2,6 +2,7 @@
   display: grid;
   width: 100%;
   position: relative;
+
   .btn__back {
     padding: 1.5rem 2rem;
     background: #fff;
@@ -12,85 +13,121 @@
     position: fixed;
     bottom: 2.3rem;
     right: 2.3rem;
+
     a {
       padding: 1.5rem 2rem;
       color: #999;
       font-weight: 600;
       font-size: 2rem;
+
       &:hover,
       &:focus {
         color: $brand-point;
       }
     }
   }
+
   .link {
     color: #339af0;
+
     &:hover {
       text-decoration: underline;
     }
   }
+
   .chan__img {
-    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817572/chan_sub.jpg)
-      no-repeat;
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817572/chan_sub.jpg) no-repeat;
   }
+
   .baemin__img {
-    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817576/baemin.jpg)
-      no-repeat;
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817576/baemin.jpg) no-repeat;
   }
+
   .baseball__img {
-    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817575/baseball.jpg)
-      no-repeat;
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817575/baseball.jpg) no-repeat;
   }
+
   .colorChallenge__img {
-    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817553/color.jpg)
-      no-repeat;
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817553/color.jpg) no-repeat;
   }
+
+  .focs__img {
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1554390521/FOCS_Bi_img.png) no-repeat;
+  }
+
+  .fx__img {
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:best/v1554401858/FX_Bi_img.png) no-repeat;
+  }
+
+  .wx__img {
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:best/v1554407001/WX_Bi_img.png) no-repeat;
+  }
+
+  .smart__img {
+    background: url(https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:best/v1554414687/smart_Bi_img.png) no-repeat;
+  }
+
+
   .visual__bg {
-    -webkit-filter: grayscale(0%);
-    filter: none;
+    transition: 0.5s;
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
     height: 450px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    &:hover {
-      -webkit-filter: grayscale(100%);
-      filter: gray;
-      transition: 0.5s;
-    }
   }
+
+  .visual__bi_bg {
+    transition: 0.5s;
+    background-size: contain;
+    background-position: 50% 50%;
+    position: relative;
+    height: 450px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+
   .article {
     width: 100%;
     padding: 0 3.5rem 5rem 3.5rem;
+
     .site__info {
       display: flex;
       align-items: center;
+
       .info__list {
         .info__item {
           margin-bottom: 2.5rem;
+
           h6 {
             color: $brand-point;
             font-size: 1.8rem;
             font-weight: 600;
           }
+
           ol {
             list-style-type: disc;
             padding-left: 2rem;
             margin-bottom: 2rem;
           }
+
           li {
             font-size: 1.6rem;
             margin-top: 0.5rem;
             word-break: keep-all;
           }
         }
+
         .info__icon {
           margin-left: -1rem;
+
           a {
             margin: 0 1rem 0;
+
             i {
               font-size: 2.5rem;
               color: $font-base;
+
               &:hover,
               &:focus {
                 color: $brand-point;
@@ -98,6 +135,76 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .detail-img-box {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 3.5rem 5rem 3.5rem;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  small {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .img__thumbArea {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 3.5rem 5rem 3.5rem;
+
+
+
+    .img__thumb {
+      margin: 0 auto;
+
+      li {
+        margin-bottom: 2rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      img {
+        border: 1px solid #d6e2de;
+        width: 100%;
+      }
+    }
+
+    .img__thumb-sm {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      flex-wrap: wrap;
+
+      li {
+        margin: 0 2rem 2rem 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .shot {
+        width: 300px;
+        height: 180px;
+      }
+
+      img {
+        border: 1px solid #d6e2de;
+        box-shadow: 0 2px 6px 3px rgba(0, 0, 0, 0.08);
+        width: auto;
+        height: 250px;
       }
     }
   }
