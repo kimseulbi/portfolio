@@ -13,10 +13,11 @@ const templates = {
 const rootEl = document.querySelector(".container");
 const logoEl = document.querySelector(".logo");
 const navEl = document.querySelector(".navigation");
+let counter = 0;
 
 // 로고를 누르면 첫페이지로 이동
-logoEl.addEventListener("click", e => {
-  e.preventDefault();
+logoEl.addEventListener("popstate", e => {
+  window.history.pushState(counter, "", "");
   drawMainPage();
 });
 
@@ -35,34 +36,23 @@ async function drawMainPage() {
     left: 0,
     behavior: "smooth"
   });
-  window.history.pushState({ data: "" }, "", "");
   // 5. 이벤트 리스너 등록하기
   baeminchanImgEl.addEventListener("click", e => {
-    // window.history.pushState({ data: "baeminchan" }, "", "/baeminchan");
+    history.pushState(counter++, "", "baeminchan");
     drawBaeminchanPage();
   });
   baeminImgEl.addEventListener("click", e => {
-    // window.history.pushState({ data: "baemin" }, "", "/storeBaemin");
+    history.pushState(counter++, "", "baemin");
     drawBaeminPage();
   });
   baseballImgEl.addEventListener("click", e => {
-    // window.history.pushState({ data: "baseball" }, "", "/baseball");
+    history.pushState(counter++, "", "baseball");
     drawBaseballPage();
   });
   colorChallengeImgEl.addEventListener("click", e => {
-    // window.history.pushState({ data: "colorchallenge" }, "", "/colorChallenge");
+    history.pushState(counter++, "", "colorChallenge");
     drawColorChallengePage();
   });
-
-  // const imgCoverEl = protfoImgEl.querySelector(".img-cover");
-
-  // 프로젝트 이미지 호버시 버튼 출력
-  // protfoImgEl.addEventListener("mouseover", function() {
-  //   imgCoverEl.style.opacity = "1";
-  // });
-  // protfoImgEl.addEventListener("mouseleave", function() {
-  //   imgCoverEl.style.opacity = "0";
-  // });
 
   // 6. 템플릿을 문서에 삽입
   navEl.textContent = "";
@@ -81,12 +71,6 @@ async function drawBaeminchanPage() {
     left: 0,
     behavior: "smooth"
   });
-  // // // 2. 요소 선택
-  // const btnBackEl = frag2.querySelector(".btn__back");
-  // // 5. 이벤트 리스너 등록하기
-  // btnBackEl.addEventListener("click", e => {
-  //   window.history.go(-1);
-  // });
   // 6. 템플릿을 문서에 삽입
   navEl.textContent = "";
   rootEl.textContent = "";
@@ -144,5 +128,10 @@ async function drawColorChallengePage() {
   navEl.appendChild(frag1);
   rootEl.appendChild(frag2);
 }
+
+window.addEventListener("popstate", e => {
+  history.pushState(counter, "", "");
+  drawMainPage();
+});
 
 drawMainPage();

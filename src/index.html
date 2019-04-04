@@ -1,230 +1,221 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SEUL PORTFO</title>
-    <link rel="stylesheet" href="./scss/style.scss" />
-    <link
-    rel="shortcut icon"
-    href="scss/images/favicon.ico"
-    type="image/x-icon"
-    />
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-    crossorigin="anonymous"
-    />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-    />
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com//bootstrap-4.0/carousel.css">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEUL PORTFO</title>
+  <link rel="stylesheet" href="./scss/style.scss" />
+  <link rel="shortcut icon" href="scss/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com//bootstrap-4.0/carousel.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com//bootstrap-4.0/carousel.min.js"></script> -->
-  </head>
-  <body>
-    <!-- wrap -->
-    <div class="wrap">
-      <header class="header">
-        <div class="header__area">
-          <h1 class="logo flipOutX"><a href="#main"><span class="readable-hidden">main</span></a></h1>
-          <nav class="navigation"></nav>
-        </div>
-      </header>
-      <div class="container"></div>
-      <footer class="footer" id="contact">
-        <div class="footer__area">
-          <h2 class="footer__heading">CONTACT ME</h2>
-          <div class="contact">
-            <div class="social-icons">
-                <a href="mailto:ksb5166@gmail.com" target="_blank" title="mail 새창">
-                  <i class="far fa-envelope"></i>
-                  <span class="readable-hidden">maill</span>
-                </a>
-              <a href="tel:01033762823" target="_blank" title="tel 새창">
-                  <i class="fas fa-mobile-alt"></i>
-                  <span class="readable-hidden">tel</span>
-                </a>
-              <a href="https://www.instagram.com/ksb201009/" target="_blank" title="instagram 새창">
-                <i class="fab fa-instagram"></i>
-                <span class="readable-hidden">instagram</span>
-              </a>
-            </div>
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <header class="header">
+      <div class="header__area">
+        <h1 class="logo flipOutX"><a href="#main"><span class="readable-hidden">main</span></a></h1>
+        <nav class="navigation"></nav>
+      </div>
+    </header>
+    <div class="container"></div>
+    <footer class="footer" id="contact">
+      <div class="footer__area">
+        <h2 class="footer__heading">CONTACT ME</h2>
+        <div class="contact">
+          <div class="social-icons">
+            <a href="mailto:ksb5166@gmail.com" target="_blank" title="mail 새창">
+              <i class="far fa-envelope"></i>
+              <span class="readable-hidden">maill</span>
+            </a>
+            <a href="tel:01033762823" target="_blank" title="tel 새창">
+              <i class="fas fa-mobile-alt"></i>
+              <span class="readable-hidden">tel</span>
+            </a>
+            <a href="https://www.instagram.com/ksb201009/" target="_blank" title="instagram 새창">
+              <i class="fab fa-instagram"></i>
+              <span class="readable-hidden">instagram</span>
+            </a>
           </div>
-          <small class="copyright">
-            Copyright since &copy; 2019 by Seulbi Kim.
-          </small>
         </div>
-      </footer>
-    </div>
+        <small class="copyright">
+          Copyright since &copy; 2019 by Seulbi Kim.
+        </small>
+      </div>
+    </footer>
+  </div>
 
-    <!-- navigation -->
-    <template id="navigation">
-      <h2 class="readable-hidden">메인메뉴</h2>
-      <ul class="menu">
-        <li class="menu__item"><a href="#portfolio" title="PORTFOLIO 바로가기">PORTFOLIO</a></li>
-        <li class="menu__item"><a href="#about" title="ABOUT 바로가기">ABOUT</a></li>
-        <li class="menu__item"><a href="./kimseulbi_ resume.pdf" target="_blank" title="RESUME 새창">RESUME</a></li>
-      </ul>
-    </template>
+  <!-- navigation -->
+  <template id="navigation">
+    <h2 class="readable-hidden">메인메뉴</h2>
+    <ul class="menu">
+      <li class="menu__item"><a href="#portfolio" title="PORTFOLIO 바로가기">PORTFOLIO</a></li>
+      <li class="menu__item"><a href="#about" title="ABOUT 바로가기">ABOUT</a></li>
+      <li class="menu__item"><a href="./kimseulbi_ resume.pdf" target="_blank" title="RESUME 새창">RESUME</a></li>
+    </ul>
+  </template>
 
-    <!-- main -->
-    <template id="main">
-      <main class="main">
-        <div class="comp">
-          <div class="comp__area">
-            <ul class="comp__list">
-              <li class="comp__list__item">
-                <a href="https://github.com/kimseulbi" target="_blank" title="github 새창">
-                  <i class="fab fa-github"></i>
-                  <span class="readable-hidden">github</span>
-                </a>
+  <!-- main -->
+  <template id="main">
+    <main class="main">
+      <div class="comp">
+        <div class="comp__area">
+          <ul class="comp__list">
+            <li class="comp__list__item">
+              <a href="https://github.com/kimseulbi" target="_blank" title="github 새창">
+                <i class="fab fa-github"></i>
+                <span class="readable-hidden">github</span>
+              </a>
+            </li>
+            <li class="comp__list__item">
+              <a href="https://gitlab.com/siots-study/topics/wikis/home" target="_blank" title="gitlab 새창">
+                <i class="fab fa-gitlab"></i>
+                <span class="readable-hidden">gitlab</span>
+              </a>
+            </li>
+            <li class="comp__list__item">
+              <a href="https://kimseulbi.github.io/" target="_blank" title="blogger 새창">
+                <i class="fab fa-blogger-b"></i>
+                <span class="readable-hidden">blogger</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="visual">
+        <div class="visual__area bounceInDown">
+          <h2 class="visual__text">Hi! I'm Seulbi Kim,</h2>
+          <h2 class="visual__text">
+            a <span>Front-end developer</span> passionate
+          </h2>
+          <h2 class="visual__text">
+            about <span>bridging gaps</span> between people and their goals
+          </h2>
+        </div>
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </section>
+      <section class="protfo" id="portfolio">
+        <figure class="protfo__img--baeminchan">
+          <img
+            src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817572/chan_sub.jpg"
+            alt="배민찬카피프로젝트" class="protfo__img" />
+        </figure>
+        <figure class="protfo__img--baemin">
+          <img
+            src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817576/baemin.jpg"
+            alt="배민문방구카피프로젝트" class="protfo__img" />
+        </figure>
+        <figure class="protfo__img--baseball">
+          <img
+            src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817575/baseball.jpg"
+            alt="숫자야구게임" class="protfo__img" />
+        </figure>
+        <figure class="protfo__img--rgb">
+          <img
+            src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817553/color.jpg"
+            alt="RGB Challenge 카피 게임" class="protfo__img" />
+        </figure>
+        <figure class="protfo__img--focs">
+          <img src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/v1552709410/focs.png" alt="focs"
+            class="protfo__img" />
+        </figure>
+        <figure class="protfo__img--fireSightFX">
+          <img src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/v1552713266/fx.png"
+            alt="fireSightFX" class="protfo__img" />
+        </figure>
+        <figure class="protfo__img--fireSightWX">
+          <img src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/v1552714454/wx.png"
+            alt="fireSightWX" class="protfo__img" />
+        </figure>
+      </section>
+      <section class="about__bg" id="about">
+        <div class="about">
+          <div class="about__heading">
+            <h2 class="name">SEULBI KIM</h2>
+            <p>Front-End Developer, UI/UX designer</p>
+          </div>
+          <img src="../src/scss/images/userImg.svg" alt="profile" class="profile__img" />
+          <div class="skillset">
+            <ul class="skill__list">
+              <li class="skill__item">
+                <h6><i class="fas fa-code"></i>&nbsp;Language</h6>
+                <p>HTML5 / CSS3 / JavaScript ES6 / VanillaJS</p>
               </li>
-              <li class="comp__list__item">
-                <a
-                  href="https://gitlab.com/siots-study/topics/wikis/home"
-                  target="_blank"
-                  title="gitlab 새창"
-                >
-                  <i class="fab fa-gitlab"></i>
-                  <span class="readable-hidden">gitlab</span>
-                </a>
+              <li class="skill__item">
+                <h6><i class="fas fa-book-open"></i>&nbsp;Library</h6>
+                <p>React / SASS / Bootstrap / AntDesign</p>
               </li>
-              <li class="comp__list__item">
-                <a href="https://kimseulbi.github.io/" target="_blank" title="blogger 새창">
-                  <i class="fab fa-blogger-b"></i>
-                  <span class="readable-hidden">blogger</span>
-                </a>
+              <li class="skill__item">
+                <h6><i class="fab fa-adobe"></i>&nbsp;Design</h6>
+                <p>Photoshop / Illustrator / AfterEffect / MAYA</p>
+              </li>
+              <li class="skill__item">
+                <h6><i class="fas fa-code-branch"></i>&nbsp;Comunity</h6>
+                <p>Github / Gitlab / Slack / Redmain</p>
               </li>
             </ul>
           </div>
-        </div>
-        <section class="visual">
-          <div class="visual__area bounceInDown">
-            <h2 class="visual__text">Hi! I'm Seulbi Kim,</h2>
-            <h2 class="visual__text">
-              a <span>Front-end developer</span> passionate
-            </h2>
-            <h2 class="visual__text">
-              about <span>bridging gaps</span> between people and their goals
-            </h2>
-          </div>
-          <div class="mouse">
-            <div class="wheel"></div>
-          </div>
-        </section>
-        <section class="protfo" id="portfolio">
-          <figure class="protfo__img--baeminchan">
-              <img src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817572/chan_sub.jpg" alt="배민찬카피프로젝트" class="protfo__img" />
-          </figure>
-          <figure class="protfo__img--baemin">
-              <img
-                src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817576/baemin.jpg"
-                alt="배민문방구카피프로젝트"
-                class="protfo__img"
-              />
-          </figure>
-          <figure class="protfo__img--baseball">
-              <img src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817575/baseball.jpg" alt="숫자야구게임" class="protfo__img" />
-          </figure>
-          <figure class="protfo__img--rgb">
-            <img src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/q_auto:good/v1550817553/color.jpg" alt="RGB Challenge 카피 게임" class="protfo__img"/>
-          </figure>
-          <figure class="protfo__img--focs">
-            <img src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/v1552709410/focs.png"
-              alt="focs" class="protfo__img" />
-          </figure>
-          <figure class="protfo__img--fireSightFX">
-            <img src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/v1552713266/fx.png"
-              alt="fireSightFX" class="protfo__img" />
-          </figure>
-          <figure class="protfo__img--fireSightWX">
-            <img src="https://res.cloudinary.com/https-seulbikim-netlify-com/image/upload/v1552714454/wx.png"
-              alt="fireSightWX" class="protfo__img" />
-          </figure>
-        </section>
-        <section class="about__bg" id="about">
-          <div class="about">
-            <div class="about__heading">
-              <h2 class="name">SEULBI KIM</h2>
-              <p>Front-End Developer, UI/UX designer</p>
-            </div>
-            <img src="../src/scss/images/userImg.svg" alt="profile" class="profile__img" />
-            <div class="skillset">
-              <ul class="skill__list">
-                <li class="skill__item">
-                  <h6><i class="fas fa-code"></i>&nbsp;Language</h6>
-                  <p>HTML5 / CSS3 / JavaScript ES6 / VanillaJS</p>
-                </li>
-                <li class="skill__item">
-                  <h6><i class="fas fa-book-open"></i>&nbsp;Library</h6>
-                  <p>React / SASS / Bootstrap / AntDesign</p>
-                </li>
-                <li class="skill__item">
-                  <h6><i class="fab fa-adobe"></i>&nbsp;Design</h6>
-                  <p>Photoshop / Illustrator / AfterEffect / MAYA</p>
-                </li>
-                <li class="skill__item">
-                  <h6><i class="fas fa-code-branch"></i>&nbsp;Comunity</h6>
-                  <p>Github / Gitlab / Slack / Redmain</p>
-                </li>
-              </ul>
-            </div>
-            <div class="award">
-              <ul class="award__list">
-                <li class="award__item">
-                  <h6 class="bage">2019</h6>
-                  <p>예비 프론트엔드개발자(시옷즈) 스터디 진행중</p>
-                </li>
-                <li class="award__item">
-                  <h6 class="bage">2018</h6>
-                  <p>패스트캠퍼스 스쿨 11기 프론트엔드과정 수료</p>
-                </li>
-                <li class="award__item">
-                  <h6 class="bage">2017</h6>
-                  <p>thebettertech 입사</p>
-                </li>
-                <li class="award__item">
-                  <h6 class="bage">2016</h6>
-                  <p>블로터 디자이너를 위한 디자인 및 코딩 과정 수료</p>
-                </li>
-                <li class="award__item">
-                  <h6 class="bage">2015</h6>
-                  <p>패스트캠퍼스 모바일 앱디자인 수료</p>
-                </li>
-                <li class="award__item">
-                  <h6 class="bage">2014</h6>
-                  <p>삼성SDS 스마트폰 앱 UX/UI 설계 및 디자인 수료</br>
+          <div class="award">
+            <ul class="award__list">
+              <li class="award__item">
+                <h6 class="bage">2019</h6>
+                <p>예비 프론트엔드개발자(시옷즈) 스터디 진행중</p>
+              </li>
+              <li class="award__item">
+                <h6 class="bage">2018</h6>
+                <p>패스트캠퍼스 스쿨 11기 프론트엔드과정 수료</p>
+              </li>
+              <li class="award__item">
+                <h6 class="bage">2017</h6>
+                <p>thebettertech 입사</p>
+              </li>
+              <li class="award__item">
+                <h6 class="bage">2016</h6>
+                <p>블로터 디자이너를 위한 디자인 및 코딩 과정 수료</p>
+              </li>
+              <li class="award__item">
+                <h6 class="bage">2015</h6>
+                <p>패스트캠퍼스 모바일 앱디자인 수료</p>
+              </li>
+              <li class="award__item">
+                <h6 class="bage">2014</h6>
+                <p>삼성SDS 스마트폰 앱 UX/UI 설계 및 디자인 수료</br>
                   삼성SDS HTML5 & CSS3 Fundamental 수료</br>
                   theboan 입사</p>
-                </li>
-                <!-- <li class="award__item">
+              </li>
+              <!-- <li class="award__item">
                   <h6 class="bage">2013</h6>
                   <p>아이티월 Android기반 2D/3D 스마트폰 Game 개발 과정 수료</p></br>
                   <p>MAYA 3D모델링 수료</p>
                 </li> -->
-              </ul>
-            </div>
+            </ul>
           </div>
-        </section>
-      </main>
-    </template>
-      
-    <!-- baeminchan -->
-    <template id="baeminchan">
-      <div class="sub">
-        <button class="btn__back">
-          <a href="./index.html">
-            <i class="far fa-arrow-alt-circle-left"></i> <span>Back to portfolio</span>
-          </a>
-        </button>
-        <div class="visual__bg chan__img">
         </div>
-        <!--
+      </section>
+    </main>
+  </template>
+
+  <!-- baeminchan -->
+  <template id="baeminchan">
+    <div class="sub">
+      <button class="btn__back">
+        <a href="./index.html">
+          <i class="fas fa-home"></i>
+        </a>
+      </button>
+      <div class="visual__bg chan__img">
+      </div>
+      <!--
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           
           <ol class="carousel-indicators">
@@ -256,248 +247,253 @@
           </a>
         </div>
         -->
-        <div class="visual">
-          <div class="visual__area">
-              <h2 class="visual__text bounceInDown"><span>Baeminchan Copy</span></h2>
-          </div>
+      <div class="visual">
+        <div class="visual__area">
+          <h2 class="visual__text bounceInDown"><span>Baeminchan Copy</span></h2>
         </div>
-        <article class="article">
-          <div class="site__info">
-            <ul class="info__list">
-              <li class="info__item">
-                <h6>프로젝트명</h6>
-                <p>배민찬 카피 프로젝트</p>
-              </li>
-              <li class="info__item">
-                <h6>기간</h6>
-                <p>2018.12.03 ~ 2018.12.21</p>
-              </li>
-              <li class="info__item">
-                <h6>내용</h6>
-                <ol>
-                  <li>React.js를 사용하여 배민찬의 카피사이트를 구현</li>
-                  <li>6명의 팀원이 기획, 3명의 프론트엔드 개발, 배포까지 진행</li>
-                  <li>담당: 반찬목록화면, 반찬상세화면, 반찬 검색필터화면, 게시판 기능</li>
-                  <li>Postman으로 웹 API 테스트</li>
-                  <li>협업과정에서 GitHub, Google Drive, Slack, Git 등을 활용하여 협업</li>
-                  <li>Git을 활용으로 프로젝트 코드 형상관리</li>
-                  <li>스프린트 단위로 나누어 프로젝트를 진행하였으며, 하나의 스프린트가 끝날 때마다 기능을 하나씩 추가하고 개선</li>
-                </ol>
-                <span class="tag">React</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span class="tag">reactstrap</span> <span class="tag">Git</span> <span class="tag">GitHub</span> <span class="tag">Slack</span> <span class="tag">Postman</span> 
-              </li>
-              <li class="info__icon">
-                <a href="https://github.com/ElegantSiblings/FE" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://baeminchan.netlify.com" target="_blank">
-                  <i class="fab fa-chrome"></i>
-                </a>
-                <a href="https://youtu.be/0xTYpg4B0pw" target="_blank">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </article>
       </div>
-    </template>
-
-    <!-- baemin -->
-    <template id="baemin">
-      <div class="sub">
-                <button class="btn__back">
-                  <a href="./index.html">
-                    <i class="far fa-arrow-alt-circle-left"></i> <span>Back to portfolio</span>
-                  </a>
-                  </button>
-        <div class="visual__bg baemin__img"></div>
-        <div class="visual">
-          <div class="visual__area">
-            <h2 class="visual__text bounceInDown"><span>Store Baemin Copy</span></h2>
-          </div>
+      <article class="article">
+        <div class="site__info">
+          <ul class="info__list">
+            <li class="info__item">
+              <h6>프로젝트명</h6>
+              <p>배민찬 카피 프로젝트</p>
+            </li>
+            <li class="info__item">
+              <h6>기간</h6>
+              <p>2018.12.03 ~ 2018.12.21</p>
+            </li>
+            <li class="info__item">
+              <h6>내용</h6>
+              <ol>
+                <li>React.js를 사용하여 배민찬의 카피사이트를 구현</li>
+                <li>6명의 팀원이 기획, 3명의 프론트엔드 개발, 배포까지 진행</li>
+                <li>담당: 반찬목록화면, 반찬상세화면, 반찬 검색필터화면, 게시판 기능</li>
+                <li>Postman으로 웹 API 테스트</li>
+                <li>협업과정에서 GitHub, Google Drive, Slack, Git 등을 활용하여 협업</li>
+                <li>Git을 활용으로 프로젝트 코드 형상관리</li>
+                <li>스프린트 단위로 나누어 프로젝트를 진행하였으며, 하나의 스프린트가 끝날 때마다 기능을 하나씩 추가하고 개선</li>
+              </ol>
+              <span class="tag">React</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span
+                class="tag">reactstrap</span> <span class="tag">Git</span> <span class="tag">GitHub</span> <span
+                class="tag">Slack</span> <span class="tag">Postman</span>
+            </li>
+            <li class="info__icon">
+              <a href="https://github.com/ElegantSiblings/FE" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://baeminchan.netlify.com" target="_blank">
+                <i class="fab fa-chrome"></i>
+              </a>
+              <a href="https://youtu.be/0xTYpg4B0pw" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <article class="article">
-          <div class="site__info">
-            <ul class="info__list">
-              <li class="info__item">
-                <h6>프로젝트명</h6>
-                <p>배민 문방구 카피 프로젝트</p>
-              </li>
-              <li class="info__item">
-                <h6>기간</h6>
-                <p>2018.11.07 ~ 2018.11.11</p>
-              </li>
-              <li class="info__item">
-                <h6>내용</h6>
-                <ol>
-                  <li>VanillaJS를 사용하여 배민문방구의 카피사이트를 구현</li>
-                  <li>VanilaJS로 templates 태그를 이용해 SPA를 구현</li>
-                  <li>JSON-Server를 이용하여 DB로 재 가공 및 API call</li>
-                  <li>담당: 반찬목록화면, 반찬상세화면, 반찬 검색필터화면, 게시판 기능</li>
-                  <li>메인화면제작, 카테고리별 화면 필터링, 장바구니에 아이템 넣기, 장바구니 화면 출력</li>
-                  <li>Git을 활용으로 프로젝트 코드 형상관리</li>
-                </ol>
-                <span class="tag">JavaScript</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span
-                  class="tag">npm</span> <span class="tag">Git</span> <span class="tag">GitHub</span> <span class="tag">JSON-Server</span>
-              </li>
-              <li class="info__icon">
-                <a href="https://github.com/kimseulbi/fds-mid-project" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://fds-mid-project.netlify.com" target="_blank">
-                  <i class="fab fa-chrome"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </template>
+      </article>
+    </div>
+  </template>
 
-    <!-- baseball -->
-    <template id="baseball">
-      <div class="sub">
+  <!-- baemin -->
+  <template id="baemin">
+    <div class="sub">
       <button class="btn__back">
         <a href="./index.html">
-          <i class="far fa-arrow-alt-circle-left"></i> <span>Back to portfolio</span>
+          <i class="fas fa-home"></i>
         </a>
       </button>
-        <div class="visual__bg baseball__img"></div>
-        <div class="visual">
-          <div class="visual__area">
-            <h2 class="visual__text bounceInDown"><span>Number baseball</span></h2>
-          </div>
+      <div class="visual__bg baemin__img"></div>
+      <div class="visual">
+        <div class="visual__area">
+          <h2 class="visual__text bounceInDown"><span>Store Baemin Copy</span></h2>
         </div>
-        <article class="article">
-          <div class="site__info">
-            <ul class="info__list">
-              <li class="info__item">
-                <h6>프로젝트명</h6>
-                <p>숫자야구게임 프로젝트</p>
-              </li>
-              <li class="info__item">
-                <h6>기간</h6>
-                <p>2018.10.22 ~ 2018.10.26</p>
-              </li>
-              <li class="info__item">
-                <h6>내용</h6>
-                <ol>
-                  <li>VanillaJS를 사용하여 숫자야구게임 구현</li>
-                  <li>2명이 한 팀이 되어 기획부터 디자인, 개발까지 진행</li>
-                  <li>화면출력 및 야구게임 알고리즘 개발 </li>
-                  <li>협업과정에서 GitHub, Google Drive, Slack, Git 등을 활용하여 협업</li>
-                  <li>Git을 활용으로 프로젝트 코드 형상관리</li>
-                </ol>
-                <span class="tag">JavaScript</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span
-                  class="tag">npm</span> <span class="tag">Git</span> <span class="tag">GitHub</span>
-              </li>
-              <li class="info__icon">
-                <a href="https://github.com/kimseulbi/hackathon-baseball-game" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://clever-tesla-02b461.netlify.com" target="_blank">
-                  <i class="fab fa-chrome"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </article>
       </div>
-    </template>
-
-    <!-- RGB Challenge -->
-    <template id="colorChallenge">
-      <div class="sub">
-        <button class="btn__back">
-          <a href="./index.html">
-            <i class="far fa-arrow-alt-circle-left"></i> <span>Back to portfolio</span>
-          </a>
-        </button>
-        <div class="visual__bg colorChallenge__img"></div>
-        <div class="visual">
-          <div class="visual__area">
-            <h2 class="visual__text bounceInDown"><span>RGB Challenge Copy</span></h2>
-          </div>
+      <article class="article">
+        <div class="site__info">
+          <ul class="info__list">
+            <li class="info__item">
+              <h6>프로젝트명</h6>
+              <p>배민 문방구 카피 프로젝트</p>
+            </li>
+            <li class="info__item">
+              <h6>기간</h6>
+              <p>2018.11.07 ~ 2018.11.11</p>
+            </li>
+            <li class="info__item">
+              <h6>내용</h6>
+              <ol>
+                <li>VanillaJS를 사용하여 배민문방구의 카피사이트를 구현</li>
+                <li>VanilaJS로 templates 태그를 이용해 SPA를 구현</li>
+                <li>JSON-Server를 이용하여 DB로 재 가공 및 API call</li>
+                <li>담당: 반찬목록화면, 반찬상세화면, 반찬 검색필터화면, 게시판 기능</li>
+                <li>메인화면제작, 카테고리별 화면 필터링, 장바구니에 아이템 넣기, 장바구니 화면 출력</li>
+                <li>Git을 활용으로 프로젝트 코드 형상관리</li>
+              </ol>
+              <span class="tag">JavaScript</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span
+                class="tag">npm</span> <span class="tag">Git</span> <span class="tag">GitHub</span> <span
+                class="tag">JSON-Server</span>
+            </li>
+            <li class="info__icon">
+              <a href="https://github.com/kimseulbi/fds-mid-project" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://fds-mid-project.netlify.com" target="_blank">
+                <i class="fab fa-chrome"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <article class="article">
-          <div class="site__info">
-            <ul class="info__list">
-              <li class="info__item">
-                <h6>프로젝트명</h6>
-                <p>RGB Challenge 카피 프로젝트</p>
-              </li>
-              <li class="info__item">
-                <h6>기간</h6>
-                <p>2018.10.17 ~ 2018.10.19</p>
-              </li>
-              <li class="info__item">
-                <h6>내용</h6>
-                <ol>
-                  <li>VanillaJS를 사용하여 RGB Challenge 카피 프로젝트를 구현</li>
-                  <li> <a href="http://www.rgbchallenge.com" class="link">http://www.rgbchallenge.com</a> 카피 프로젝트</li>
-                </ol>
-                <span class="tag">JavaScript</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span
-                  class="tag">npm</span> <span class="tag">Git</span> <span class="tag">GitHub</span>
-              </li>
-              <li class="info__icon">
-                <a href="https://github.com/kimseulbi/fds-rgb-challenge" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://vigilant-hamilton-a02060.netlify.com/" target="_blank">
-                  <i class="fab fa-chrome"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </template>
+      </article>
+    </div>
+  </template>
 
-    <!-- focs -->
-    <template id="focs">
-      <div class="sub">
-        <button class="btn__back">
-          <a href="./index.html">
-            <i class="far fa-arrow-alt-circle-left"></i> <span>Back to portfolio</span>
-          </a>
-        </button>
-        <div class="visual__bg focs__img"></div>
-        <div class="visual">
-          <div class="visual__area">
-            <h2 class="visual__text bounceInDown"><span>FOCS</span></h2>
-          </div>
+  <!-- baseball -->
+  <template id="baseball">
+    <div class="sub">
+      <button class="btn__back">
+        <a href="./index.html">
+          <i class="fas fa-home"></i>
+        </a>
+      </button>
+      <div class="visual__bg baseball__img"></div>
+      <div class="visual">
+        <div class="visual__area">
+          <h2 class="visual__text bounceInDown"><span>Number baseball</span></h2>
         </div>
-        <article class="article">
-          <div class="site__info">
-            <ul class="info__list">
-              <li class="info__item">
-                <h6>프로젝트명</h6>
-                <p>FOCS 방화벽정책통합관리 솔루션</p>
-              </li>
-              <li class="info__item">
-                <h6>기간</h6>
-                <p>2017.03 ~ 2018.08</p>
-              </li>
-              <li class="info__item">
-                <h6>내용</h6>
-                <ol>
-                  <li>방화벽 신청 부터 운영, 감사까지 지원하는 운영 시스템</li>
-                  <li>사용자의 편의성을 고려한 UI/UX 설계</li>
-                  <li>HTML5 & SASS 이용하여 화면 퍼블리싱</li>
-                  <li>Axure RP로 화면 스토리보드 작성</li>
-                  <li>협업과정에서 GitLab, Google Drive, Slack 등을 활용하여 협업</li>
-                  <li>React기반 AntDesign 라이브러리 사용하여 JSX 마크업 사용</li>
-                  <li>기여도: 디자인, 퍼블리싱 단독진행 100%</li>
-                </ol>
-                <span class="tag">HTML5</span> <span class="tag">SASS</span> <span class="tag">Git</span> <span
-                  class="tag">Gitlab</span> <span class="tag">yarn</span> <span class="tag">AntDesign</span> <span class="tag">UX/UI</span>
-              </li>
-            </ul>
-          </div>
-        </article>
       </div>
-    </template>
+      <article class="article">
+        <div class="site__info">
+          <ul class="info__list">
+            <li class="info__item">
+              <h6>프로젝트명</h6>
+              <p>숫자야구게임 프로젝트</p>
+            </li>
+            <li class="info__item">
+              <h6>기간</h6>
+              <p>2018.10.22 ~ 2018.10.26</p>
+            </li>
+            <li class="info__item">
+              <h6>내용</h6>
+              <ol>
+                <li>VanillaJS를 사용하여 숫자야구게임 구현</li>
+                <li>2명이 한 팀이 되어 기획부터 디자인, 개발까지 진행</li>
+                <li>화면출력 및 야구게임 알고리즘 개발 </li>
+                <li>협업과정에서 GitHub, Google Drive, Slack, Git 등을 활용하여 협업</li>
+                <li>Git을 활용으로 프로젝트 코드 형상관리</li>
+              </ol>
+              <span class="tag">JavaScript</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span
+                class="tag">npm</span> <span class="tag">Git</span> <span class="tag">GitHub</span>
+            </li>
+            <li class="info__icon">
+              <a href="https://github.com/kimseulbi/hackathon-baseball-game" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://clever-tesla-02b461.netlify.com" target="_blank">
+                <i class="fab fa-chrome"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </template>
 
-    <script src="./index.js"></script>
-  </body>
+  <!-- RGB Challenge -->
+  <template id="colorChallenge">
+    <div class="sub">
+      <button class="btn__back">
+        <a href="./index.html">
+          <i class="fas fa-home"></i>
+        </a>
+      </button>
+      <div class="visual__bg colorChallenge__img"></div>
+      <div class="visual">
+        <div class="visual__area">
+          <h2 class="visual__text bounceInDown"><span>RGB Challenge Copy</span></h2>
+        </div>
+      </div>
+      <article class="article">
+        <div class="site__info">
+          <ul class="info__list">
+            <li class="info__item">
+              <h6>프로젝트명</h6>
+              <p>RGB Challenge 카피 프로젝트</p>
+            </li>
+            <li class="info__item">
+              <h6>기간</h6>
+              <p>2018.10.17 ~ 2018.10.19</p>
+            </li>
+            <li class="info__item">
+              <h6>내용</h6>
+              <ol>
+                <li>VanillaJS를 사용하여 RGB Challenge 카피 프로젝트를 구현</li>
+                <li> <a href="http://www.rgbchallenge.com" class="link">http://www.rgbchallenge.com</a> 카피 프로젝트</li>
+              </ol>
+              <span class="tag">JavaScript</span> <span class="tag">HTML5</span> <span class="tag">SASS</span> <span
+                class="tag">npm</span> <span class="tag">Git</span> <span class="tag">GitHub</span>
+            </li>
+            <li class="info__icon">
+              <a href="https://github.com/kimseulbi/fds-rgb-challenge" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://vigilant-hamilton-a02060.netlify.com/" target="_blank">
+                <i class="fab fa-chrome"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </template>
+
+  <!-- focs -->
+  <template id="focs">
+    <div class="sub">
+      <button class="btn__back">
+        <a href="./index.html">
+          <i class="fas fa-home"></i>
+        </a>
+      </button>
+      <div class="visual__bg focs__img"></div>
+      <div class="visual">
+        <div class="visual__area">
+          <h2 class="visual__text bounceInDown"><span>FOCS</span></h2>
+        </div>
+      </div>
+      <article class="article">
+        <div class="site__info">
+          <ul class="info__list">
+            <li class="info__item">
+              <h6>프로젝트명</h6>
+              <p>FOCS 방화벽정책통합관리 솔루션</p>
+            </li>
+            <li class="info__item">
+              <h6>기간</h6>
+              <p>2017.03 ~ 2018.08</p>
+            </li>
+            <li class="info__item">
+              <h6>내용</h6>
+              <ol>
+                <li>방화벽 신청 부터 운영, 감사까지 지원하는 운영 시스템</li>
+                <li>사용자의 편의성을 고려한 UI/UX 설계</li>
+                <li>HTML5 & SASS 이용하여 화면 퍼블리싱</li>
+                <li>Axure RP로 화면 스토리보드 작성</li>
+                <li>협업과정에서 GitLab, Google Drive, Slack 등을 활용하여 협업</li>
+                <li>React기반 AntDesign 라이브러리 사용하여 JSX 마크업 사용</li>
+                <li>기여도: 디자인, 퍼블리싱 단독진행 100%</li>
+              </ol>
+              <span class="tag">HTML5</span> <span class="tag">SASS</span> <span class="tag">Git</span> <span
+                class="tag">Gitlab</span> <span class="tag">yarn</span> <span class="tag">AntDesign</span> <span
+                class="tag">UX/UI</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </template>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>
