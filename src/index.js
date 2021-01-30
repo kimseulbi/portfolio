@@ -3,7 +3,7 @@ import "@babel/polyfill";
 const templates = {
   main: document.querySelector("#main").content,
   baeminchan: document.querySelector("#baeminchan").content,
-  baemin: document.querySelector("#baemin").content,
+  // baemin: document.querySelector("#baemin").content,
   baseball: document.querySelector("#baseball").content,
   colorChallenge: document.querySelector("#colorChallenge").content,
   focs: document.querySelector("#focs").content,
@@ -31,7 +31,7 @@ async function drawMainPage() {
   const frag2 = document.importNode(templates.main, true);
   // 2. 요소 선택
   const baeminchanImgEl = frag2.querySelector(".protfo__img--baeminchan");
-  const baeminImgEl = frag2.querySelector(".protfo__img--baemin");
+  // const baeminImgEl = frag2.querySelector(".protfo__img--baemin");
   const baseballImgEl = frag2.querySelector(".protfo__img--baseball");
   const colorChallengeImgEl = frag2.querySelector(".protfo__img--rgb");
   const focsImgEl = frag2.querySelector(".protfo__img--focs");
@@ -48,10 +48,10 @@ async function drawMainPage() {
     history.pushState(counter++, "", "baeminchan");
     drawBaeminchanPage();
   });
-  baeminImgEl.addEventListener("click", e => {
-    history.pushState(counter++, "", "baemin");
-    drawBaeminPage();
-  });
+  // baeminImgEl.addEventListener("click", e => {
+  //   history.pushState(counter++, "", "baemin");
+  //   drawBaeminPage();
+  // });
   baseballImgEl.addEventListener("click", e => {
     history.pushState(counter++, "", "baseball");
     drawBaseballPage();
@@ -102,21 +102,21 @@ async function drawBaeminchanPage() {
 }
 
 // 배민문방구 서브페이지
-async function drawBaeminPage() {
-  // 1. 템플릿 복사
-  const frag1 = document.importNode(templates.nav, false);
-  const frag2 = document.importNode(templates.baemin, true);
-  window.scroll({
-    top: 0,
-    left: 0,
-    behavior: "smooth"
-  });
-  // 6. 템플릿을 문서에 삽입
-  navEl.textContent = "";
-  rootEl.textContent = "";
-  navEl.appendChild(frag1);
-  rootEl.appendChild(frag2);
-}
+// async function drawBaeminPage() {
+//   // 1. 템플릿 복사
+//   const frag1 = document.importNode(templates.nav, false);
+//   const frag2 = document.importNode(templates.baemin, true);
+//   window.scroll({
+//     top: 0,
+//     left: 0,
+//     behavior: "smooth"
+//   });
+//   // 6. 템플릿을 문서에 삽입
+//   navEl.textContent = "";
+//   rootEl.textContent = "";
+//   navEl.appendChild(frag1);
+//   rootEl.appendChild(frag2);
+// }
 
 // 숫자야구 서브페이지
 async function drawBaseballPage() {
