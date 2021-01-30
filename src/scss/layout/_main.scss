@@ -9,7 +9,7 @@
     grid-template-rows: 1fr;
     pointer-events: none;
     .comp__area {
-      margin-right: 3rem;
+      margin-right: 4rem;
       justify-self: end;
       align-self: center;
       position: absolute;
@@ -21,9 +21,9 @@
         height: 100%;
         white-space: nowrap;
         &__item {
-          padding: 8px 0;
+          padding: 10px 0;
           a {
-            padding: 5px;
+            padding: 10px;
             i {
               font-size: 2rem;
             }
