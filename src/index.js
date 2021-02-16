@@ -2,6 +2,10 @@ import "@babel/polyfill";
 
 const templates = {
   main: document.querySelector("#main").content,
+  dongnepro: document.querySelector("#dongnepro").content,
+  csinnovation: document.querySelector("#csinnovation").content,
+  ucares: document.querySelector("#ucares").content,
+  dnpAdmin: document.querySelector("#dnpAdim").content,
   baeminchan: document.querySelector("#baeminchan").content,
   // baemin: document.querySelector("#baemin").content,
   baseball: document.querySelector("#baseball").content,
@@ -30,6 +34,10 @@ async function drawMainPage() {
   const frag1 = document.importNode(templates.nav, true);
   const frag2 = document.importNode(templates.main, true);
   // 2. 요소 선택
+  const dongneproImgEl = frag2.querySelector(".protfo__img--dongnepro");
+  const csinnovationImgEl = frag2.querySelector(".protfo__img--csinnovation");
+  const ucaresImgEl = frag2.querySelector(".protfo__img--ucares");
+  const dnpAdminImgEl = frag2.querySelector(".protfo__img--dnpAdmin");
   const baeminchanImgEl = frag2.querySelector(".protfo__img--baeminchan");
   // const baeminImgEl = frag2.querySelector(".protfo__img--baemin");
   const baseballImgEl = frag2.querySelector(".protfo__img--baseball");
@@ -44,6 +52,22 @@ async function drawMainPage() {
     behavior: "smooth"
   });
   // 5. 이벤트 리스너 등록하기
+  dongneproImgEl.addEventListener("click", e => {
+    history.pushState(counter++, "", "dongnepro");
+    drawDongneproPage();
+  });
+  csinnovationImgEl.addEventListener("click", e => {
+    history.pushState(counter++, "", "csinnovation");
+    drawCSinnovationPage();
+  });
+  ucaresImgEl.addEventListener("click", e => {
+    history.pushState(counter++, "", "ucares");
+    drawUcaresPage();
+  });
+  dnpAdminImgEl.addEventListener("click", e => {
+    history.pushState(counter++, "", "dnpAdmin");
+    drawDnpAdminPage();
+  });
   baeminchanImgEl.addEventListener("click", e => {
     history.pushState(counter++, "", "baeminchan");
     drawBaeminchanPage();
@@ -77,6 +101,74 @@ async function drawMainPage() {
     drawSmartPage();
   });
 
+  // 6. 템플릿을 문서에 삽입
+  navEl.textContent = "";
+  rootEl.textContent = "";
+  navEl.appendChild(frag1);
+  rootEl.appendChild(frag2);
+}
+
+// 우리동네프로들 서브페이지
+async function drawDongneproPage() {
+  // 1. 템플릿 복사
+  const frag1 = document.importNode(templates.nav, false);
+  const frag2 = document.importNode(templates.dongnepro, true);
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+  // 6. 템플릿을 문서에 삽입
+  navEl.textContent = "";
+  rootEl.textContent = "";
+  navEl.appendChild(frag1);
+  rootEl.appendChild(frag2);
+}
+
+// CS이노베이션 서브페이지
+async function drawCSinnovationPage() {
+  // 1. 템플릿 복사
+  const frag1 = document.importNode(templates.nav, false);
+  const frag2 = document.importNode(templates.csinnovation, true);
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+  // 6. 템플릿을 문서에 삽입
+  navEl.textContent = "";
+  rootEl.textContent = "";
+  navEl.appendChild(frag1);
+  rootEl.appendChild(frag2);
+}
+
+// ucares 서브페이지
+async function drawUcaresPage() {
+  // 1. 템플릿 복사
+  const frag1 = document.importNode(templates.nav, false);
+  const frag2 = document.importNode(templates.ucares, true);
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+  // 6. 템플릿을 문서에 삽입
+  navEl.textContent = "";
+  rootEl.textContent = "";
+  navEl.appendChild(frag1);
+  rootEl.appendChild(frag2);
+}
+
+// 동네프로 통합관리 서브페이지
+async function drawDnpAdminPage() {
+  // 1. 템플릿 복사
+  const frag1 = document.importNode(templates.nav, false);
+  const frag2 = document.importNode(templates.dnpAdmin, true);
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
   // 6. 템플릿을 문서에 삽입
   navEl.textContent = "";
   rootEl.textContent = "";
