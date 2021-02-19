@@ -3,6 +3,7 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
+        include: "./scss/style.scss",
         use: [
             // style-loader는 css-loader에서 바꾼 js string을 <style> 노드로 생성해줍니다.
             { loader: "style-loader" },
