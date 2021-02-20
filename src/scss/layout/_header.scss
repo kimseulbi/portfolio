@@ -1,23 +1,36 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .header {
   z-index: 100;
   background: $body-bg;
   font-size: 1.6rem;
   width: 100%;
   padding: 0 3.5rem;
+
   .header__area {
     max-width: 1170px;
     margin: 0 auto;
+
     .logo {
       background: $brand-logo no-repeat 0 0;
       background-size: 100%;
       width: 40px;
       height: 40px;
     }
+
     .menu {
       a {
         padding: 1rem;
+
         &:hover,
         &:active {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop($brand-point), to($brand-point));
+          background-image: -o-linear-gradient(0, $brand-point, $brand-point);
           background-image: linear-gradient(0, $brand-point, $brand-point);
           background-repeat: no-repeat;
           background-size: 100% 0.5rem;
@@ -27,6 +40,7 @@
     }
   }
 }
+
 @include respond-to("medium") {
   .header {
     -ms-grid-column: 1;
@@ -35,18 +49,27 @@
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+
     .logo {
       margin: 3rem auto;
     }
+
     .navigation {
       .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
       }
     }
   }
 }
+
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .header {
     -ms-grid-column: 1;
@@ -55,13 +78,21 @@
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+
     .logo {
       margin: 3rem auto;
     }
+
     .navigation {
       .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
       }
     }
@@ -77,26 +108,40 @@
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     width: 100%;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08);
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+
     &__area {
       height: 95px;
       line-height: 95px;
       position: relative;
+
       .logo {
         position: absolute;
         top: 3rem;
       }
+
       .navigation {
         .menu {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
           flex-direction: row;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
           justify-content: flex-end;
           padding-left: 100px;
+
           &__item {
             margin: 0 2rem;
           }
+
           .menu__item:nth-last-child(1) {
             margin-right: 0;
           }

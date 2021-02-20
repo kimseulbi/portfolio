@@ -1,11 +1,11 @@
 @include respond-to("medium") {
   .container {
-   -ms-grid-column: 1;
-   -ms-grid-column-span: 8;
-   grid-column: 1 / span 8;
-   -ms-grid-row: 2;
-   -ms-grid-row-span: 1;
-   grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1 / span 8;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
   }
 }
 
