@@ -1,13 +1,11 @@
 {
-  "modules": true,
   "plugins": {
     "autoprefixer": {
-      "browsers": [
-        "> 1%",
+      "browsers" : [
+        ">1%",
         "Last 2 versions",
         "IE 10"
-      ],
-      "grid": true
+      ]
     }
   }
 }
