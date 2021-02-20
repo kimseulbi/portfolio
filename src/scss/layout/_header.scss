@@ -29,9 +29,12 @@
 }
 @include respond-to("medium") {
   .header {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
     grid-column: 1 / span 8;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
-    font-size: 1.4rem;
     .logo {
       margin: 3rem auto;
     }
@@ -46,7 +49,11 @@
 }
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .header {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
     grid-column: 1 / span 8;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
     .logo {
       margin: 3rem auto;
@@ -63,7 +70,11 @@
 
 @include respond-to("huge") {
   .header {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
     grid-column: 1 / span 14;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
     width: 100%;
     position: sticky;

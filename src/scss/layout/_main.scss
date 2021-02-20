@@ -4,8 +4,11 @@
     position: fixed;
     width: 100%;
     z-index: 150;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     pointer-events: none;
     .comp__area {
@@ -13,6 +16,10 @@
       justify-self: end;
       align-self: center;
       position: absolute;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
       grid-area: 1 / 1 / 2 / 2;
       pointer-events: initial;
       .comp__list {
@@ -37,6 +44,7 @@
     }
   }
   .protfo {
+    display: -ms-grid;
     display: grid;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
@@ -160,15 +168,19 @@
 @include respond-to("medium") {
   .main {
     .protfo {
+      -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       margin: 0 35px;
       figure {
+        -ms-grid-column-span: 6;
         grid-column: span 6;
       }
     }
     .about__bg {
       .about {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-row-gap: 30px;
         .profile__img {
@@ -188,6 +200,7 @@
       }
     }
     .toolbox {
+      -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
       padding: 0 3.5rem;
       .toolbox__heading {
